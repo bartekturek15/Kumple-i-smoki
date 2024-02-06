@@ -1,0 +1,32 @@
+{
+  "name": "projekt-inzynierski",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "axios": "^1.5.1",
+    "bootstrap": "^5.3.2",
+    "mobx": "^6.12.0",
+    "sass": "^1.69.7",
+    "vue": "^3.3.4",
+    "vue-awesome-paginate": "^1.1.46",
+    "vue-router": "^4.0.13",
+    "vuex": "^4.1.0",
+    "vuex-persistedstate": "^4.1.0",
+    "wow.js": "^1.2.2",
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5"
+  }
+}

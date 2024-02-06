@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   fill="currentColor"
+   class="bi bi-heart"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="heartwhitefull.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="35.532116"
+     inkscape:cx="11.187063"
+     inkscape:cy="9.5547364"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <g
+     id="g1887"
+     transform="translate(-17.067767,-1.1939813)">
+    <path
+       d="m 25.067662,3.9420299 -0.717,-0.737 c -1.683,-1.73 -4.769,-1.133 -5.883,1.042 -0.523,1.023 -0.641,2.5 0.314,4.3850003 0.92,1.8150008 2.834,3.9890008 6.286,6.3570008 3.452,-2.368 5.365,-4.542 6.286,-6.3570008 0.955,-1.8860003 0.838,-3.3620003 0.314,-4.3850003 -1.114,-2.175 -4.2,-2.773 -5.883,-1.043 z m 0,12.2520011 c -15.3330003,-10.1320011 -4.721,-18.0400012 -0.176,-13.8570011 0.06,0.055 0.119,0.112 0.176,0.171 0.05642,-0.058946 0.115133,-0.1156566 0.176,-0.17 3.85204,-3.548556 12.06544,1.5947083 5.13678,9.4164161 -1.244629,1.405051 -2.977871,2.896532 -5.31278,4.439585 z"
+       id="path2"
+       style="fill:#ffffff"
+       sodipodi:nodetypes="cccccccccccccsc" />
+    <rect
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:2.66079;stroke-linecap:square;paint-order:fill markers stroke"
+       id="rect962"
+       width="4.3980098"
+       height="3.0248756"
+       x="20.477612"
+       y="4.7761192" />
+    <rect
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:2.66079;stroke-linecap:square;paint-order:fill markers stroke"
+       id="rect964"
+       width="0.68656665"
+       height="0.99502486"
+       x="21.253731"
+       y="4.7761192" />
+    <ellipse
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:2.66079;stroke-linecap:square;paint-order:fill markers stroke"
+       id="path1744"
+       cx="28.467661"
+       cy="5.4741058"
+       rx="2.5174129"
+       ry="2.326889" />
+    <ellipse
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:2.66079;stroke-linecap:square;paint-order:fill markers stroke"
+       id="path1744-2"
+       cx="21.597013"
+       cy="5.7114429"
+       rx="2.5174129"
+       ry="2.326889" />
+    <rect
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:2.66079;stroke-linecap:square;paint-order:fill markers stroke"
+       id="rect1768"
+       width="4.5866766"
+       height="1.8866794"
+       x="19.662079"
+       y="5.9143152" />
+    <rect
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:2.62857;stroke-linecap:square;paint-order:fill markers stroke"
+       id="rect1770"
+       width="7.5404024"
+       height="1.8859061"
+       x="21.297323"
+       y="8.7456512" />
+    <ellipse
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:2.73348;stroke-linecap:square;paint-order:fill markers stroke"
+       id="path1772"
+       cx="24.874216"
+       cy="9.6886044"
+       rx="2.5643451"
+       ry="3.9073696" />
+    <ellipse
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:2.66079;stroke-linecap:square;paint-order:fill markers stroke"
+       id="path1774"
+       cx="20.739889"
+       cy="8.4661131"
+       rx="0.85712337"
+       ry="1.9387496" />
+    <ellipse
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:2.66079;stroke-linecap:square;paint-order:fill markers stroke"
+       id="path1776"
+       cx="27.27146"
+       cy="9.3687267"
+       rx="1.0668486"
+       ry="2.8114464" />
+    <ellipse
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:2.66079;stroke-linecap:square;paint-order:fill markers stroke"
+       id="path1874"
+       cx="29.621891"
+       cy="7.8293767"
+       rx="1.3631841"
+       ry="1.3020133" />
+  </g>
+</svg>
