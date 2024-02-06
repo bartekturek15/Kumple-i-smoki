@@ -23,7 +23,7 @@
                                 data-aos-once="true"
                                 data-aos-anchor-placement="top-center"
                                 class="display-3 mb-3 ms-4">
-                                Kumple i smoki
+                                Kumple i smokii
                             </h1>
                             <p  data-aos="fade-right"
                                 data-aos-offset="-50"
