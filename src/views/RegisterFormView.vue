@@ -1,4 +1,5 @@
 <template>
+    <div class="navbar-hider"></div>
     <form @submit.prevent="createPost">
         <div class="wrapper">
             <div class="container main">
@@ -179,6 +180,13 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
     *{
         font-family: 'Poppins', sans-serif;
+    }
+    .navbar-hider {
+        background-color: whitesmoke;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 60px;
     }
     p {
         font-size: small;

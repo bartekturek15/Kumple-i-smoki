@@ -5,12 +5,22 @@
             :class="{ 'navbar--hidden': !showNavbar }"
         >
         <div class="container-fluid">
-            <router-link to="/" style="text-decoration: none">
-                <a class="navbar-brand" href="#">
-                    <img src="/DnD-Emblem.png" alt="Logo" width="50" height="28" class="d-inline-block align-text-top">
-                    Kumple i Smoki
-                </a>
-            </router-link>
+            <div class="d-none d-xl-block">
+                <router-link to="/" style="text-decoration: none">
+                    <a class="navbar-brand" href="#">
+                        <img src="/DnD-Emblem.png" alt="Logo" width="50" height="28" class="d-inline-block align-text-top">
+                        Kumple i Smoki
+                    </a>
+                </router-link>
+            </div>
+            <div class="d-xl-none">
+                <router-link to="/" style="text-decoration: none">
+                    <a class="navbar-brand" href="#">
+                        <img src="/DnD-Emblem.png" alt="Logo" width="50" height="28" class="d-inline-block align-text-top">
+                        <span style="font-size: 16px;">Kumple i Smoki</span> 
+                    </a>
+                </router-link>
+            </div>
             
             
             <a class="nav-link d-xl-none ms-auto" href="#">
@@ -30,8 +40,8 @@
                             Biblioteka
                         </span>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li class="ms-1"><router-link class="dropdown-item" to="/services/design">Stworzone</router-link></li>
-                            <li class="ms-1"><router-link class="dropdown-item" to="/services/design">Ulubione</router-link></li>
+                            <li class="ms-1"><router-link class="dropdown-item" to="/StworzoneElementy">Stworzone</router-link></li>
+                            <li class="ms-1"><router-link class="dropdown-item" to="/PolubioneElementy">Ulubione</router-link></li>
                         </ul>
                         </div></li>
                         <li class="ms-1"><div class="dropstart">
@@ -39,8 +49,8 @@
                             Ustawienia
                         </span>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li class="ms-1"><router-link class="dropdown-item" to="/services/design">Zmień hasło użytkownika</router-link></li>
-                            <li class="ms-1"><router-link class="dropdown-item" to="/services/design">Zmień nazwe użytkownika</router-link></li>
+                            <li class="ms-1"><router-link class="dropdown-item" to="/ZmianaHasla">Zmień hasło użytkownika</router-link></li>
+                            <li class="ms-1"><router-link class="dropdown-item" to="/ZmianaNazwy">Zmień nazwe użytkownika</router-link></li>
                         </ul>
                         </div></li>
                         <li><router-link class="dropdown-item" to="" @click="logout">Wyloguj się</router-link></li>

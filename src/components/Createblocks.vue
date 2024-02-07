@@ -171,11 +171,21 @@
 
 <script>
 import { RouterLink } from 'vue-router';
+import {mapGetters} from 'vuex';
+import router from '../router';
 
 
 export default {
     name: "Searchblocks",
-    components: { RouterLink }
+    components: { RouterLink },
+    computed: {
+        ...mapGetters(['user'])
+    },
+    created() {
+        if(this.user == null) {
+            this.$router.push('/Logowanie')
+        }
+    }
 };
 </script>
 
