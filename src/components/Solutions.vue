@@ -199,7 +199,13 @@ data() {
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
     cursor: pointer;
 }
-
+@media (max-width: 576px){
+  .card{
+     /* margin-left: 15px; */
+     /* margin-right: 15px; */
+     margin-bottom: 25px !important;
+  }
+}
 .card:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
