@@ -3,6 +3,8 @@
     <Solutions />
     <Discord />
     <Aboutus />
+    <Faq />
+    <Solutions />
 
 </template>
 
@@ -13,6 +15,7 @@
     import Solutions from '../components/Solutions.vue';
     import Discord from '../components/Discordpage.vue';
     import Aboutus from '../components/Aboutuspage.vue';
+    import Faq from '../components/Faq.vue';
     export default {
     
     name: "home",
@@ -21,7 +24,8 @@
         Problem,
         Solutions,
         Discord,
-        Aboutus
+        Aboutus,
+        Faq
   }
     }
 </script>

@@ -4,10 +4,10 @@
             <div class="container-fluid">
                 <div class="row"
                 >
-                    <div class="col-lg-6 text-center p-3 mt-3">
+                    <div class="col-lg-6 text-center p-3 mt-3 mb-3">
                         <img :src="text" class="img-fluid rounded" alt="..."
-                                @mouseover="text = '/my1.jpg'"
-                                @mouseleave="text = '/My.jpg'"
+                                @mouseover="text = '/my1.png'"
+                                @mouseleave="text = '/My.png'"
                                 data-aos="fade-right"
                                 data-aos-offset="-100"
                                 data-aos-delay="50"
@@ -56,7 +56,7 @@
         name: "aboutuspage",
         data() {
             return {
-                text: '/My.jpg'
+                text: '/My.png'
             }
         },
         methods: {
@@ -71,54 +71,29 @@
     *{
         font-family: 'Poppins', sans-serif;
     }
-   
-    .my-button {
-        padding: 5px 12px;
-        background-color: none;
-        border-color: whitesmoke;
-        color: whitesmoke;
-        transition: .4s;
+
+    #aboutuspage1 {
+        min-height: 55vh;
+        
     }
-    .my-button:hover {
-        background-color: whitesmoke; 
-        color: black;
+
+    @media screen and (max-width:  768px) {
+            #aboutuspage1 {
+                min-height: 55vh;
+                
     }
-.cta {
-    opacity: 80%;
-    font-weight: 500 !important;
-    padding: 12px 20px !important;
-    margin: 0 !important;
-}
-.grow {
-    transition: all .2s ease-in;
-}
-.grow:hover {
-    transition: all .2s ease-in-out;
-    transform: scale(1.1);
-}
-
-#aboutuspage1 {
-    min-height: 55vh;
-    
-}
-
-@media screen and (max-width:  768px) {
-        #aboutuspage1 {
-            min-height: 55vh;
-            
-}
-      }
-#aboutuspage {
-    min-height: 55vh;
-    background-size: 100% 100%;
-}
-
-@media screen and (max-width:  768px) {
-        #aboutuspage {
-            min-height: 55vh;
-            background-image: none;
-            
         }
-      }
+    #aboutuspage {
+        min-height: 55vh;
+        background-size: 100% 100%;
+    }
+
+    @media screen and (max-width:  768px) {
+            #aboutuspage {
+                min-height: 55vh;
+                background-image: none;
+                
+            }
+        }
 
 </style>
