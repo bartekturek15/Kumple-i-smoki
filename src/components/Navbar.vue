@@ -253,6 +253,9 @@ export default {
     }
     .navbar-toggler {
         border: 0 !important;
+        width: 5px;
+        height: 5px;
+        margin-bottom: 15px;
     }   
 
     .navbar-toggler:focus,
