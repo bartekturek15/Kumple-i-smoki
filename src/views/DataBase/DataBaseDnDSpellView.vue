@@ -3,23 +3,11 @@
     <div class="container d-none d-md-block">
         <div class="input-group">
             <Searchbar @search="handleSearch" />
-            <div class="ms-auto mt-5">
-                <Filterblocksspelllevel />
-            </div>
-            <div class="ms-2 mt-5">
-                <Filterblocksspellschool />
-            </div>
         </div>
     </div>
     <div class="container d-md-none">
         <div class="input-group">
             <Searchbar @search="handleSearch" />
-            <div class="me-2 mt-3">
-                <Filterblocksspelllevel />
-            </div>
-            <div class="me-auto mt-3">
-                <Filterblocksspellschool />
-            </div>
         </div>
     </div>
    
@@ -104,8 +92,6 @@
 <script>
     import Navbar from '../../components/Navbar.vue';
     import Searchbar from '../../components/Searchbar.vue';
-    import Filterblocksspelllevel from '../../components/SpellFilters/Filterblocksspelllevel.vue';
-    import Filterblocksspellschool from '../../components/SpellFilters/Filterblocksspellschool.vue';
     import axios from 'axios';
 
     export default {
@@ -113,8 +99,6 @@
     components: {
         Navbar,
         Searchbar,
-        Filterblocksspelllevel,
-        Filterblocksspellschool
    },
    data() {
         return {

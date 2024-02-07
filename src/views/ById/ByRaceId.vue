@@ -47,7 +47,7 @@
         </div>
         
         <div class="ps-md-5 pe-md-5 mb-3 pt-3 fs-6">
-            <table class="table custom-table table-dark mx-auto overflow-auto">
+            <table v-if="item.raceTableHeader != [] || item.raceTableData != [['']]" class="table custom-table table-dark mx-auto overflow-auto">
                 <thead>
                     <tr>
                         <th style="color: rgba(255, 255, 255, 0.950);" v-for="(line, index_row) in item.raceTableHeader" :key="index_row" scope="col" v-if="line != ''">{{ line }}</th>
@@ -115,7 +115,10 @@ export default {
     },
     mounted() {
         axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/Race/id/' + this.id)
-            .then(response => this.item = response.data);
+            .then(response => {
+                this.item = response.data
+                console.log(this.item)
+            });
         axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/CustomRaceFeature/' + this.id)
             .then(response => this.itemCustomFeatures = response.data);
         
