@@ -42,10 +42,10 @@
                     <div class="input-field">
                         <div class="">
                             <div class=""><input :type="passwordFieldType" class="input inputforpass" id="password" v-model="postData.password" placeholder=" " @blur="v$.postData.password.$touch"/> <label for="password">Hasło</label>
-                                <button v-if="passwordFieldType != 'password'" class="special me-xs-0 me-3" type="password" @click="switchVisibility">
+                                <button v-if="passwordFieldType != 'password'" class="special me-sm-0 me-3" type="password" @click="switchVisibility">
                                     <img src="/eye.svg" color="white" width="20" height="25">
                                 </button>
-                                <button v-if="passwordFieldType != 'text'" class="special" type="password" @click="switchVisibility">
+                                <button v-if="passwordFieldType != 'text'" class="special me-sm-0 me-3" type="password" @click="switchVisibility">
                                     <img src="/eye-slash.svg" color="white" width="20" height="25">
                                 </button>
                                 <p 
@@ -236,7 +236,6 @@
         width: 900px;
         height: 550px;
         border-radius: 10px;
-        
         background: #fff;
         box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
     }
@@ -244,7 +243,6 @@
         width: 900px;
         height: 550px;
         border-radius: 10px;
-        
         background: #fff;
         box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
     }
@@ -391,10 +389,6 @@
         }
         .text p, i{
             font-size: 16px;
-        }
-        .row{
-            max-width:420px;
-            width: 100%;
         }
     }
 </style>
