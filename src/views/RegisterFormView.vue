@@ -95,11 +95,11 @@
         </div>
     </form>
         
-
+    <Footer />
 </template>
 
 <script>
-    import Navbar from '../components/Navbar.vue';
+    import Footer from '../components/Footer.vue';
     import axios from 'axios';
     import useVuelidate from "@vuelidate/core";
     import { required, helpers, email } from "@vuelidate/validators";
@@ -118,6 +118,9 @@
 
         }
     },
+    components: {
+        Footer   
+    },
     validations() {
    return {
     postData: {
@@ -134,9 +137,6 @@
      },
    };
  },
-    components: {
-        Navbar,
-    },
     methods: {
         async createPost() {
            

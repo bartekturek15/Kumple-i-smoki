@@ -96,13 +96,14 @@
         </div>
     </div>
 </form>    
-
+<Footer />
 </template>
 
 <script>
     import axios from 'axios';
     import useVuelidate from "@vuelidate/core";
     import { required, helpers, email } from "@vuelidate/validators";
+    import Footer from '../components/Footer.vue';
     export default {
     name: "loginForm",
     data() {
@@ -115,6 +116,9 @@
             error : null,
             remember: false   
         }
+    },
+    components: {
+        Footer
     },
     validations() {
    return {

@@ -4,8 +4,9 @@
     <Discord />
     <Aboutus />
     <Faq />
- 
     <Footer />
+ 
+    
 
 </template>
 
@@ -18,6 +19,7 @@
     import Aboutus from '../components/Aboutuspage.vue';
     import Faq from '../components/Faq.vue';
     import Footer from '../components/Footer.vue';
+
     export default {
     
     name: "home",
