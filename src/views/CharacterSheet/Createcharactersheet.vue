@@ -1574,7 +1574,7 @@
         border: none;
     }
     .wid {
-        min-width: 1200px;
+        min-width: 1330px;
     }
    .namebox {
     background: #2e2e36;
