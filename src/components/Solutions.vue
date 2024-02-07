@@ -92,7 +92,7 @@
                             data-aos-once="true"
                             data-aos-anchor-placement="top-center"  
                             class="col-md-6 p-0">
-                        <router-link style="text-decoration: none" to="/TworzenieElementow">
+                        <router-link style="text-decoration: none;" to="/TworzenieElementow">
                             <div class="card mx-auto mt-5" style="width: 18rem;">
                                 <img src="/3.png" class="card-img-top" alt="...">
                                 <div class="card-body">
