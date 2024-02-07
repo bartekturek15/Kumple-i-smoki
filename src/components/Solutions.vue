@@ -103,7 +103,7 @@
                         </router-link>
                         
                     </div>
-                    <div    data-aos="fade-left"
+                    <div    data-aos="fade-right"
                             data-aos-offset="-100"
                             data-aos-delay="50"
                             data-aos-duration="1500"
@@ -145,7 +145,7 @@
                         </router-link>
                         
                     </div>
-                    <div    data-aos="fade-left"
+                    <div    data-aos="fade-right"
                             data-aos-offset="-100"
                             data-aos-delay="50"
                             data-aos-duration="1500"

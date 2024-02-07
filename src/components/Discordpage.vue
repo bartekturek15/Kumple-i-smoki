@@ -3,7 +3,7 @@
         <div id="discordpage1" class="bg-dark text-white m-0 p-0">
             <div class="container-fluid">
                 <div id="discordpage" class="row"
-                data-aos="fade-left"
+                data-aos="fade-right"
                 data-aos-offset="-150"
                 data-aos-delay="50"
                 data-aos-duration="1000"
@@ -14,7 +14,7 @@
                 >
                     <div class="col-lg-6">
                         <div class="text-start mt-sm-5 mt-3 ms-4">
-                            <h1 data-aos="fade-left"
+                            <h1 data-aos="fade-right"
                                 data-aos-offset="-75"
                                 data-aos-delay="50"
                                 data-aos-duration="800"
@@ -25,7 +25,7 @@
                                 class="display-3 mb-3 ms-4">
                                 Discord i D&D
                             </h1>
-                            <p  data-aos="fade-left"
+                            <p  data-aos="fade-right"
                                 data-aos-offset="-70"
                                 data-aos-delay="50"
                                 data-aos-duration="1000"
