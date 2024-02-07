@@ -1499,6 +1499,7 @@
     background-color: #37373d;
     color: whitesmoke;
     font-size: 18px;
+    width: 250px;
   }
   .inp:focus {
     box-shadow: 0 4px 2px -2px #666;
