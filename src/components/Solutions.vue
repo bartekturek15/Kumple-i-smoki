@@ -84,16 +84,16 @@
                 </div>
                 <div class="row d-xl-none">
                     <div    data-aos="fade-right"
-                            data-aos-offset="-100"
+                            data-aos-offset="-150"
                             data-aos-delay="50"
-                            data-aos-duration="1500"
+                            data-aos-duration="1000"
                             data-aos-easing="ease-in-out"
                             data-aos-mirror="true"
                             data-aos-once="true"
                             data-aos-anchor-placement="top-center"  
                             class="col-md-6 p-0">
                         <router-link style="text-decoration: none" to="/TworzenieElementow">
-                            <div class="card mx-auto mt-5 me-md-5" style="width: 18rem;">
+                            <div class="card mx-auto mt-5" style="width: 18rem;">
                                 <img src="/3.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5>{{firstSolutionTitle}}</h5>
@@ -104,16 +104,16 @@
                         
                     </div>
                     <div    data-aos="fade-right"
-                            data-aos-offset="-100"
+                            data-aos-offset="-150"
                             data-aos-delay="50"
-                            data-aos-duration="1500"
+                            data-aos-duration="1000"
                             data-aos-easing="ease-in-out"
                             data-aos-mirror="true"
                             data-aos-once="true"
                             data-aos-anchor-placement="top-center" 
                             class="col-md-6 p-0 d-xl-none">
                         <router-link style="text-decoration: none" to="/BazaDanychDnD">
-                            <div class="card mx-auto mt-5 ms-md-5" style="width: 18rem;">
+                            <div class="card mx-auto mt-4" style="width: 18rem;">
                                 <img src="/1.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5>{{secondSolutionTitle}}</h5>
@@ -126,16 +126,16 @@
                 </div>
                 <div class="row d-xl-none">
                     <div    data-aos="fade-right"
-                            data-aos-offset="-100"
+                            data-aos-offset="-150"
                             data-aos-delay="50"
-                            data-aos-duration="1500"
+                            data-aos-duration="1000"
                             data-aos-easing="ease-in-out"
                             data-aos-mirror="true"
                             data-aos-once="true"
                             data-aos-anchor-placement="top-center" 
                             class="col-md-6 p-0">
                         <router-link style="text-decoration: none" to="/KartaPostaci">
-                            <div class="card mx-auto mt-4 me-md-5" style="width: 18rem;">
+                            <div class="card mx-auto mt-4" style="width: 18rem;">
                                 <img src="/4.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5>{{thirdSolutionTitle}}</h5>
@@ -146,16 +146,16 @@
                         
                     </div>
                     <div    data-aos="fade-right"
-                            data-aos-offset="-100"
+                            data-aos-offset="-150"
                             data-aos-delay="50"
-                            data-aos-duration="1500"
+                            data-aos-duration="1000"
                             data-aos-easing="ease-in-out"
                             data-aos-mirror="true"
                             data-aos-once="true"
                             data-aos-anchor-placement="top-center" 
                             class="col-md-6 p-0 d-xl-none">
                         <router-link style="text-decoration: none" to="/SesjaOnline">
-                            <div class="card mx-auto mt-4 mb-5 ms-md-5" style="width: 18rem;">
+                            <div class="card mx-auto mt-4 mb-5" style="width: 18rem;">
                                 <img src="/2.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5>{{fourthSolutionTitle}}</h5>

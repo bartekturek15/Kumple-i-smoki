@@ -20,7 +20,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="text-start mt-sm-5 mt-3 ms-4">
-                            <h1 data-aos="fade-left"
+                            <h1 data-aos="fade-right"
                                 data-aos-offset="-100"
                                 data-aos-delay="50"
                                 data-aos-duration="800"
@@ -31,7 +31,7 @@
                                 class="display-3 mb-3 ms-4">
                                 O nas
                             </h1>
-                            <p  data-aos="fade-left"
+                            <p  data-aos="fade-right"
                                 data-aos-offset="-100"
                                 data-aos-delay="50"
                                 data-aos-duration="1000"

@@ -2,6 +2,7 @@
     <Problem />
     <Solutions />
     <Discord />
+    <Aboutus />
 
 </template>
 

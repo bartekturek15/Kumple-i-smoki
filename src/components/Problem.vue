@@ -13,7 +13,7 @@
                 data-aos-anchor-placement="top-center"
                 >
                     <div class="col-lg-6">
-                        <div class="text-start mt-sm-5 mt-3 ms-4">
+                        <div class="text-start mt-sm-5 mt-3">
                             <h1 data-aos="fade-right"
                                 data-aos-offset="-50"
                                 data-aos-delay="50"
@@ -22,11 +22,18 @@
                                 data-aos-mirror="true"
                                 data-aos-once="true"
                                 data-aos-anchor-placement="top-center"
-                                class="display-3 mb-3 ms-4">
-                                Kumple i smokii
+                                class="display-3 mb-3 ms-sm-4 ms-1">
+                                Kumple i smoki
                             </h1>
-                            <p  data-aos="zoom-in" data-aos-easing="ease-in" 
-                                class="fs-4 ms-4">
+                            <p  data-aos="fade-right"
+                                data-aos-offset="-50"
+                                data-aos-delay="50"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-in-out"
+                                data-aos-mirror="true"
+                                data-aos-once="true"
+                                data-aos-anchor-placement="top-center" 
+                                class="fs-4 ms-sm-4 ms-1">
                                 Portal społecznościowy skierowany do osób, które chcą uprościć przygotowania do swoich sesji, 
                                 znaleźć nowe pomysły lub podzielić się własnymi ze społecznością graczy D&D. 
                                 Nasz projekt wyróżnia się możliwością tworzenia katalogów własnych obiektów (np. czarów i przeciwników), a także udostępnianie innym użytkownikom.
@@ -41,7 +48,7 @@
                                 data-aos-once="true"
                                 data-aos-anchor-placement="top-center"  
                                 class="container p-0 m-0">
-                                <a class="ms-4 mb-5" href="">
+                                <a class="ms-sm-4 mb-5 ms-1 pb-5" href="">
                                     <button type="button" class="btn btn-light cta mb-4">Rozpocznij swoją przygodę!</button>
                                 </a>
                         </div> 
@@ -110,7 +117,7 @@
 
 @media screen and (max-width:  768px) {
         #problem {
-            min-height: 75vh;
+            height: 85vh;
             background-image: none;
             
         }

@@ -13,7 +13,7 @@
                 data-aos-anchor-placement="top-center"
                 >
                     <div class="col-lg-6">
-                        <div class="text-start mt-sm-5 mt-3 ms-4">
+                        <div class="text-start mt-sm-5 mt-5">
                             <h1 data-aos="fade-right"
                                 data-aos-offset="-75"
                                 data-aos-delay="50"
@@ -22,7 +22,7 @@
                                 data-aos-mirror="true"
                                 data-aos-once="true"
                                 data-aos-anchor-placement="top-center"
-                                class="display-3 mb-3 ms-4">
+                                class="display-3 mb-3 ms-sm-4 ms-2">
                                 Discord i D&D
                             </h1>
                             <p  data-aos="fade-right"
@@ -33,7 +33,7 @@
                                 data-aos-mirror="true"
                                 data-aos-once="true"
                                 data-aos-anchor-placement="top-center" 
-                                class="fs-4 ms-4">
+                                class="fs-4 ms-sm-4 ms-2">
                                 Discord w ciągu ostatnich paru lat, stał się najpopularniejszym narzędziem do prowadzenia sesji online. 
                                 Dzięki Opcją jak Wideorozmowa, udostępnianie ekranu czy kanały tekstowe. Dołącz do naszego serwera "Kumple i smoki"
                                
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="mt-5 discordwid text-center"><iframe src="https://discord.com/widget?id=1148915780415651880&theme=dark" 
+                        <div class="mt-5 ms-sm-4 ms-2 mb-5 mb-sm-0 discordwid text-center"><iframe src="https://discord.com/widget?id=1148915780415651880&theme=dark" 
                             width="325" height="475" allowtransparency="true" frameborder="0" 
                             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
                             data-aos="fade-right"
