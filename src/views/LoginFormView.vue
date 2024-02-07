@@ -42,7 +42,7 @@
                     <div class="input-field">
                         <div class="">
                             <div class=""><input :type="passwordFieldType" class="input inputforpass" id="password" v-model="postData.password" placeholder=" " @blur="v$.postData.password.$touch"/> <label for="password">Hasło</label>
-                                <button v-if="passwordFieldType != 'password'" class="special" type="password" @click="switchVisibility">
+                                <button v-if="passwordFieldType != 'password'" class="special me-xs-0 me-3" type="password" @click="switchVisibility">
                                     <img src="/eye.svg" color="white" width="20" height="25">
                                 </button>
                                 <button v-if="passwordFieldType != 'text'" class="special" type="password" @click="switchVisibility">
@@ -99,7 +99,6 @@
 </template>
 
 <script>
-    import Navbar from '../components/Navbar.vue';
     import axios from 'axios';
     import useVuelidate from "@vuelidate/core";
     import { required, helpers, email } from "@vuelidate/validators";
@@ -129,9 +128,7 @@
      },
    };
  },
-    components: {
-        Navbar,
-    },
+
     created() {
         
         const savedrem = JSON.parse(localStorage.getItem('rem'))
@@ -226,6 +223,8 @@
     .wrapper {
         background: whitesmoke;
         padding: 23.5px;
+        width: 100%;
+        height: 100%;
     }
     .main {
         display: flex;
