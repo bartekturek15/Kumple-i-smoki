@@ -87,7 +87,7 @@
             
             <span v-if="user == null">
                 <router-link class="nav-link ms-sm-3 me-1 d-none d-xl-block" to="/Logowanie">
-                    <button type="button" class="btn my-button">Zaloguj się</button>
+                    <button style="font-size: 15px;" type="button" class="btn my-button">Zaloguj się</button>
                 </router-link>
                 
             </span>
@@ -249,7 +249,7 @@ export default {
         color: black;
     }
     .loginbutton {
-        font-size: 17px;
+        font-size: 12px;
     }
     .navbar-toggler {
         border: 0 !important;
