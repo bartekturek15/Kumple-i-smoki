@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="mt-5 ms-sm-4 ms-2 mb-5 mb-sm-0 discordwid text-center"><iframe src="https://discord.com/widget?id=1148915780415651880&theme=dark" 
+                        <div class="mt-5 mx-auto mb-5 mb-sm-0 discordwid text-center"><iframe src="https://discord.com/widget?id=1148915780415651880&theme=dark" 
                             width="325" height="475" allowtransparency="true" frameborder="0" 
                             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
                             data-aos="fade-right"

@@ -13,7 +13,7 @@
                 data-aos-anchor-placement="top-center"
                 >
                     <div class="col-lg-6">
-                        <div class="text-start mt-sm-5 mt-3">
+                        <div class="text-start mt-sm-5 mt-4">
                             <h1 data-aos="fade-right"
                                 data-aos-offset="-50"
                                 data-aos-delay="50"
@@ -117,7 +117,7 @@
 
 @media screen and (max-width:  768px) {
         #problem {
-            height: 85vh;
+            height: 82vh;
             background-image: none;
             
         }

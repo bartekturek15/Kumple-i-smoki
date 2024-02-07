@@ -201,9 +201,7 @@ data() {
 }
 @media (max-width: 576px){
   .card{
-     /* margin-left: 15px; */
-     /* margin-right: 15px; */
-     margin-bottom: 25px !important;
+     margin-right: 0;
   }
 }
 .card:hover{
