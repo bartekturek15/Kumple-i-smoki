@@ -9,11 +9,9 @@
     <div class="container d-md-none">
         <div class="input-group">
             <Searchbar @search="handleSearch" />
-            <div class="me-2 mt-3">
-                <Filterblocksspelllevel />
-            </div>
+            
             <div class="me-auto mt-3">
-                <Filterblocksspellschool />
+                
             </div>
         </div>
     </div>
@@ -28,7 +26,7 @@
                 </tr>
             </thead>
             <tbody v-if="this.items.length > 0">
-                    <tr v-for="item in VisiblePost" :key="item.raceId" class="position-relative">
+                    <tr  v-for="item in VisiblePost" :key="item.raceId" class="position-relative">
                         <td v-if="item.inheritedRaceID == 0" scope="row">
                             <router-link class="stretched-link" style="text-decoration: none; color:whitesmoke" 
                             :to="{ name: 'ByRaceId', params: { id: item.raceId, link: '/StworzoneRasy', doDelete: true  }}">
@@ -163,7 +161,10 @@
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }
-                }).then(response => this.items = response.data);
+                }).then(response => {
+                    this.items = response.data
+                    console.log(this.items)
+                });
                 setTimeout(this.changeLoading, 3000);
 
             

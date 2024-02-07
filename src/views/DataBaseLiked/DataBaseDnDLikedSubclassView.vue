@@ -9,11 +9,9 @@
     <div class="container d-md-none">
         <div class="input-group">
             <Searchbar @search="handleSearch" />
-            <div class="me-2 mt-3">
-                <Filterblocksspelllevel />
-            </div>
+            
             <div class="me-auto mt-3">
-                <Filterblocksspellschool />
+                
             </div>
         </div>
     </div>

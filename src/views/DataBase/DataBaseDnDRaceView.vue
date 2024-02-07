@@ -20,17 +20,17 @@
                     <th scope="col">Polubienia</th>
                 </tr>
             </thead>
-            <tbody v-if="this.items.length > 0">
-                    <tr v-for="item in VisiblePost" :key="item.raceId" class="position-relative">
-                        <td v-if="item.inheritedRaceID == 0" scope="row">
-                            <router-link class="stretched-link" style="text-decoration: none; color:whitesmoke" 
-                            :to="{ name: 'ByRaceId', params: { id: item.raceId, link: '/Rasy' }}">
-                                {{ item.ownerName }}
-                            </router-link>
-                        </td> 
-                        <td v-if="item.inheritedRaceID == 0">{{ item.raceName }}</td>  
-                        <td v-if="item.inheritedRaceID == 0">{{ item.upvotes }}</td>
-                    </tr>
+            <tbody v-if="filteredID.length > 0">
+                        <tr v-for="item in VisiblePost" :key="item.raceId" class="position-relative">
+                            <td scope="row">
+                                <router-link class="stretched-link" style="text-decoration: none; color:whitesmoke"
+                                :to="{ name: 'ByRaceId', params: { id: item.raceId, link: '/Rasy' }}">
+                                    {{ item.ownerName }}
+                                </router-link>
+                            </td>
+                            <td>{{ item.raceName }}</td>
+                            <td>{{ item.upvotes }}</td>
+                        </tr>
             </tbody>
             <tbody v-else>
                 <tr>
@@ -105,13 +105,18 @@
         };
     },
     computed: {
-        filteredItems() {
-            if (this.searchFilter !== '') {
+        filteredID() {
                 return this.items.filter(item => 
+                item.inheritedRaceID == 0);
+        },
+        filteredItems() {
+            console.log(this.filteredID)
+            if (this.searchFilter !== '') {
+                return this.items.filteredID(item => 
                 item.raceName.toLowerCase().includes(this.searchFilter));
             }
 
-            return this.items;
+            return this.filteredID;
         },
         VisiblePost() {
             const startPage = (this.currentPage - 1 ) *  this.itemPerPage;
@@ -149,7 +154,10 @@
     },
     mounted() {
         axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/Race')
-            .then(response => this.items = response.data);
+            .then(response => {
+                this.items = response.data
+                console.log(this.items)
+            });
             setTimeout(this.changeLoading, 3000);
 
             

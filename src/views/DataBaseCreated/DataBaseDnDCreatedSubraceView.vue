@@ -9,11 +9,9 @@
     <div class="container d-md-none">
         <div class="input-group">
             <Searchbar @search="handleSearch" />
-            <div class="me-2 mt-3">
-                <Filterblocksspelllevel />
-            </div>
+            
             <div class="me-auto mt-3">
-                <Filterblocksspellschool />
+                
             </div>
         </div>
     </div>
@@ -29,14 +27,14 @@
             </thead>
             <tbody v-if="this.items.length > 0">
                     <tr v-for="item in VisiblePost" :key="item.raceId" class="position-relative">
-                        <td v-if="item.inheritedRaceID != 0" scope="row">
+                        <td v-if="item.inheritedRaceID != 0 || item.inheritedRaceID == null" scope="row">
                             <router-link class="stretched-link" style="text-decoration: none; color:whitesmoke" 
                             :to="{ name: 'ByRaceId', params: { id: item.raceId, link: '/StworzonePodrasy', doDelete: true  }}">
                                 {{ item.ownerName }}
                             </router-link>
                         </td> 
-                        <td v-if="item.inheritedRaceID != 0">{{ item.raceName }}</td>  
-                        <td v-if="item.inheritedRaceID != 0">{{ item.upvotes }}</td>
+                        <td v-if="item.inheritedRaceID != 0 || item.inheritedRaceID == null">{{ item.raceName }}</td>  
+                        <td v-if="item.inheritedRaceID != 0 || item.inheritedRaceID == null">{{ item.upvotes }}</td>
                     </tr>
             </tbody>
             <tbody v-else>
@@ -159,11 +157,14 @@
         }
     },
     mounted() {
-        axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/Subrace/owner/' + this.user.userID, {
+        axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/Race/owner/' + this.user.userID, {
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }
-                }).then(response => this.items = response.data);
+                }).then(response => {
+                    this.items = response.data
+                    console.log(this.items)
+                });
                 setTimeout(this.changeLoading, 3000);
 
             
