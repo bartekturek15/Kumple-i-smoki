@@ -25,14 +25,7 @@
                                 class="display-3 mb-3 ms-4">
                                 Kumple i smokii
                             </h1>
-                            <p  data-aos="fade-right"
-                                data-aos-offset="-50"
-                                data-aos-delay="50"
-                                data-aos-duration="1000"
-                                data-aos-easing="ease-in-out"
-                                data-aos-mirror="true"
-                                data-aos-once="true"
-                                data-aos-anchor-placement="top-center" 
+                            <p  data-aos="zoom-in" data-aos-easing="ease-in" 
                                 class="fs-4 ms-4">
                                 Portal społecznościowy skierowany do osób, które chcą uprościć przygotowania do swoich sesji, 
                                 znaleźć nowe pomysły lub podzielić się własnymi ze społecznością graczy D&D. 
