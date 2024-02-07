@@ -6,7 +6,7 @@
                 data-aos="fade-left"
                 data-aos-offset="-150"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="900"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
                 data-aos-once="true"
@@ -14,10 +14,10 @@
                 >
                     <div class="col-lg-6">
                         <div class="text-start mt-sm-5 mt-5">
-                            <h1 data-aos="fade-left"
-                                data-aos-offset="-75"
+                            <h1 data-aos="fade-right"
+                                data-aos-offset="-55"
                                 data-aos-delay="50"
-                                data-aos-duration="800"
+                                data-aos-duration="1000"
                                 data-aos-easing="ease-in-out"
                                 data-aos-mirror="true"
                                 data-aos-once="true"
@@ -25,8 +25,8 @@
                                 class="display-3 mb-3 ms-sm-4 ms-2">
                                 Discord i D&D
                             </h1>
-                            <p  data-aos="fade-left"
-                                data-aos-offset="-70"
+                            <p  data-aos="fade-right"
+                                data-aos-offset="-75"
                                 data-aos-delay="50"
                                 data-aos-duration="1000"
                                 data-aos-easing="ease-in-out"
@@ -45,7 +45,7 @@
                             width="325" height="475" allowtransparency="true" frameborder="0" 
                             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
                             data-aos="fade-left"
-                            data-aos-offset="-70"
+                            data-aos-offset="-75"
                             data-aos-delay="50"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out"

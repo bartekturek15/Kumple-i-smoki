@@ -4,7 +4,8 @@
     <Discord />
     <Aboutus />
     <Faq />
-    <Solutions />
+ 
+    <Footer />
 
 </template>
 
@@ -16,6 +17,7 @@
     import Discord from '../components/Discordpage.vue';
     import Aboutus from '../components/Aboutuspage.vue';
     import Faq from '../components/Faq.vue';
+    import Footer from '../components/Footer.vue';
     export default {
     
     name: "home",
@@ -25,7 +27,8 @@
         Solutions,
         Discord,
         Aboutus,
-        Faq
+        Faq,
+        Footer
   }
     }
 </script>

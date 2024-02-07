@@ -34,13 +34,15 @@
                             <p  data-aos="fade-right"
                                 data-aos-offset="-100"
                                 data-aos-delay="50"
-                                data-aos-duration="1000"
+                                data-aos-duration="800"
                                 data-aos-easing="ease-in-out"
                                 data-aos-mirror="true"
                                 data-aos-once="true"
                                 data-aos-anchor-placement="top-center" 
-                                class="fs-4 ms-4">
-                                Rok temu zaczeliśmy grać w dnd. ITS COOL.
+                                class="fs-4 ms-4 mt-5 mb-5">
+                                Jesteśmy pasjonatami Dungeons & Dragons - gry, w której każdy może stać się bohaterem swojej własnej epickiej opowieści. 
+                                Nasza strona to miejsce, gdzie spotykają się podróżnicy z całego globu, 
+                                by dzielić się swoimi doświadczeniami, pomysłami i inspiracjami.
                                
                             </p>
                         </div>
