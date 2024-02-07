@@ -51,7 +51,7 @@
             </span>
                 
             </a> 
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler collapsed me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="toggler-icon top-bar"></span>
                 <span class="toggler-icon middle-bar"></span>
                 <span class="toggler-icon bottom-bar"></span>
@@ -253,9 +253,6 @@ export default {
     }
     .navbar-toggler {
         border: 0 !important;
-        width: 5px;
-        height: 5px;
-        margin-bottom: 15px;
     }   
 
     .navbar-toggler:focus,

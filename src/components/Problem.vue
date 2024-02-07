@@ -117,7 +117,7 @@
 
 @media screen and (max-width:  768px) {
         #problem {
-            height: 82vh;
+            min-height: 82vh;
             background-image: none;
             
         }
