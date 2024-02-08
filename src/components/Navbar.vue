@@ -78,7 +78,7 @@
                         Tworzenie elementów
                     </router-link>
                 </li>
-                <li class="nav-item  ms-2 ms-md-1">
+                <li class="nav-item  ms-2 ms-lg-1">
                     <router-link class="nav-link" style="text-decoration: none" to="/BazaDanychDnD">
                        Baza danych D&D
                     </router-link>

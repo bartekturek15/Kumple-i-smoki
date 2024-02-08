@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <h1 data-aos="fade-right"
-                 data-aos-offset="-100"
+                 data-aos-offset="-500"
                  data-aos-delay="50"
                  data-aos-duration="600"
                  data-aos-easing="ease-in-out"
@@ -12,7 +12,7 @@
                 class="display-6 text-light text-center mt-5">Wybierz jedna z kategorii, która chcesz przejrzeć:</h1></div>
         <div class="row justify-content-center">
             <div data-aos="fade-up"
-                 data-aos-offset="-100"
+                 data-aos-offset="-500"
                  data-aos-delay="50"
                  data-aos-duration="600"
                  data-aos-easing="ease-in-out"
@@ -34,7 +34,7 @@
                 </router-link>
             </div>
             <div data-aos="fade-down"
-                 data-aos-offset="-100"
+                 data-aos-offset="-500"
                  data-aos-delay="50"
                  data-aos-duration="600"
                  data-aos-easing="ease-in-out"
@@ -56,7 +56,7 @@
                 </router-link>
             </div>
             <div data-aos="fade-up"
-                 data-aos-offset="-100"
+                 data-aos-offset="-500"
                  data-aos-delay="50"
                  data-aos-duration="600"
                  data-aos-easing="ease-in-out"
@@ -78,7 +78,7 @@
                 </router-link>
             </div>
             <div data-aos="fade-down"
-                 data-aos-offset="-100"
+                 data-aos-offset="-500"
                  data-aos-delay="50"
                  data-aos-duration="600"
                  data-aos-easing="ease-in-out"
@@ -100,7 +100,7 @@
                 </router-link>
             </div>
             <div data-aos="fade-up"
-                 data-aos-offset="-100"
+                 data-aos-offset="-500"
                  data-aos-delay="50"
                  data-aos-duration="600"
                  data-aos-easing="ease-in-out"
@@ -122,7 +122,7 @@
                 </router-link>
             </div>
             <div data-aos="fade-down"
-                 data-aos-offset="-100"
+                 data-aos-offset="-500"
                  data-aos-delay="50"
                  data-aos-duration="600"
                  data-aos-easing="ease-in-out"
@@ -144,7 +144,7 @@
                 </router-link>
             </div>
             <div data-aos="fade-up"
-                 data-aos-offset="-100"
+                 data-aos-offset="-500"
                  data-aos-delay="50"
                  data-aos-duration="600"
                  data-aos-easing="ease-in-out"
@@ -190,7 +190,7 @@ export default {
 </script>
 
 <style scoped>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@500;200;300;400;500;600;700;800&display=swap");
     *{
         font-family: 'Poppins', sans-serif;
         font-size: 1.35rem;
