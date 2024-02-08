@@ -1,12 +1,30 @@
 <template>
-    <div class="container border-bottom">
+    <div class="container border-bottom mb-4">
         <router-link :to="linked">
             <button style="color: rgba(255, 255, 255, 0.800);" class="btn mt-4 ms-5 align-text-center fs-4 mb-1" type="button" >
                 <img src="/chevron-leftwhite.svg" color="white" width="30" height="35" class="d-inline-block align-text-center">
                  Wróć
             </button>
         </router-link>
-        <button v-if="this.delete" style="color: rgba(255, 255, 255, 0.800);" class="btn mt-4 ms-5 align-text-center fs-4 mb-1" type="button" @click="deleted()">
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Usuwanie</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Czy na pewno chcesz usunąć element: {{ item.spellName }}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                    <button type="button" class="btn btn-primary" @click="deleted()" data-bs-dismiss="modal">Potwierdź</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        <button v-if="this.delete" style="color: rgba(255, 255, 255, 0.800);" class="btn mt-4 ms-5 align-text-center fs-4 mb-1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <img src="/pencil-squarewhite.svg" color="white" width="30" height="35" class="d-inline-block align-text-center">
                 Usuń
             </button>
@@ -278,7 +296,12 @@ export default {
                                 Authorization: 'Bearer ' + localStorage.getItem('token')
                         },
                 data: this.item       
-            })
+            }).then(
+                setTimeout(() => {
+                    this.$router.push('/StworzeniPrzeciwnicy')
+                }, 1000)
+                
+            )
         },
         changeUpvote() {
             this.result = !this.result

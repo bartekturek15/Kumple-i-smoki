@@ -41,7 +41,7 @@
          </div>
          <div class="col-lg-6 mb-4 input-field">
              <input type="text" class="input" id="spellRange" autocomplete="off" placeholder=" " :value="spell.spellRange" @input="updateForm('spellRange', $event.target.value)" @blur="v$.spell.spellRange.$touch">
-             <label style="color: white;" for="spellRange" class="form-label">Zasięg czaru:</label>
+             <label style="color: white;" for="spellRange" class="form-label">Zasięg:</label>
              <p style="color: red;"
               class="fs-6"
               v-for="error of v$.spell.spellRange.$errors"
@@ -54,7 +54,7 @@
        <div class="row justify-content-center">
          <div class="col-lg-6 mb-4 input-field">
              <input type="text" class="input" id="spellDuration" autocomplete="off" placeholder=" " :value="spell.spellDuration" @input="updateForm('spellDuration', $event.target.value)" @blur="v$.spell.spellDuration.$touch">
-             <label style="color: white;" for="spellDuration" class="form-label">Czas trwania czaru:</label>
+             <label style="color: white;" for="spellDuration" class="form-label">Czas trwania:</label>
              <p style="color: red;"
               class="fs-6"
               v-for="error of v$.spell.spellDuration.$errors"
@@ -65,7 +65,7 @@
          </div>
          <div class="col-lg-6 mb-4 input-field">
              <input type="text" class="input" id="spellComponents" autocomplete="off" placeholder=" " :value="spell.spellLevel" @input="updateForm('spellLevel', $event.target.value)" @blur="v$.spell.spellLevel.$touch">
-             <label style="color: white;" for="spellComponents" class="form-label">Poziom czaru:</label>
+             <label style="color: white;" for="spellComponents" class="form-label">Poziom:</label>
              <p style="color: red;"
               class="fs-6"
               v-for="error of v$.spell.spellLevel.$errors"

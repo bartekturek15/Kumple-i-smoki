@@ -4,7 +4,7 @@
             <div class="container-fluid">
                 <div class="row">
             <div    data-aos="fade-right"
-                    data-aos-offset="-150"
+                    data-aos-offset="-500"
                     data-aos-delay="50"
                     data-aos-duration="600"
                     data-aos-easing="ease-in-out"
@@ -23,7 +23,7 @@
                 </router-link>
             </div>
                 <div    data-aos="fade-up"
-                        data-aos-offset="-150"
+                        data-aos-offset="-500"
                         data-aos-delay="50"
                         data-aos-duration="600"
                         data-aos-easing="ease-in-out"
@@ -43,7 +43,7 @@
                     
                 </div>
                 <div    data-aos="fade-down"
-                        data-aos-offset="-150"
+                        data-aos-offset="-500"
                         data-aos-delay="50"
                         data-aos-duration="600"
                         data-aos-easing="ease-in-out"
@@ -63,7 +63,7 @@
                     
                 </div>
                 <div    data-aos="fade-left"
-                        data-aos-offset="-150"
+                        data-aos-offset="-500"
                         data-aos-delay="50"
                         data-aos-duration="600"
                         data-aos-easing="ease-in-out"

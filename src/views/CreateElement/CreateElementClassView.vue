@@ -116,7 +116,7 @@
             <div class="row mt-4 justify-content-center">
             <div class="col-lg-6 mb-4 mb-md-5 input-field">
                 <input type="text" class="input" id="classMulticlassReq" autocomplete="off" placeholder=" " v-model="dndclass.classMulticlassReq" @blur="v$.dndclass.classMulticlassReq.$touch" @input="updateForm('classMulticlassReq', $event.target.value)">
-                <label style="color: white;" for="classMulticlassReq" class="form-label">classMulticlassReq:</label>
+                <label style="color: white;" for="classMulticlassReq" class="form-label">Wymagania multiklasowania:</label>
                 <p style="color: red;"
                   class="fs-6"
                   v-for="error of v$.dndclass.classMulticlassReq.$errors"
@@ -127,7 +127,7 @@
             </div>
             <div class="col-lg-6 mb-3 mb-md-5 input-field">
                 <input type="text" class="input" id="classHitDice" autocomplete="off" placeholder=" " v-model="dndclass.classHitDice" @blur="v$.dndclass.classHitDice.$touch" @input="updateForm('classHitDice', $event.target.value)">
-                <label style="color: white;" for="classHitDice" class="form-label">classHitDice:</label>
+                <label style="color: white;" for="classHitDice" class="form-label">Kość życia:</label>
                 <p style="color: red;"
                   class="fs-6"
                   v-for="error of v$.dndclass.classHitDice.$errors"
@@ -140,7 +140,7 @@
           <div class="row mt-4 justify-content-center">
             <div class="col-lg-6 mb-4 mb-md-5 input-field">
                 <input type="text" class="input" id="classHitPointsAtFirst" autocomplete="off" placeholder=" " v-model="dndclass.classHitPointsAtFirst" @blur="v$.dndclass.classHitPointsAtFirst.$touch" @input="updateForm('classHitPointsAtFirst', $event.target.value)">
-                <label style="color: white;" for="classHitPointsAtFirst" class="form-label">classHitPointsAtFirst:</label>
+                <label style="color: white;" for="classHitPointsAtFirst" class="form-label">Na pierwszym poziomie:</label>
                 <p style="color: red;"
                   class="fs-6"
                   v-for="error of v$.dndclass.classHitPointsAtFirst.$errors"
@@ -151,7 +151,7 @@
             </div>
             <div class="col-lg-6 mb-3 mb-md-5 input-field">
                 <input type="text" class="input" id="classHitPointsAtHigh" autocomplete="off" placeholder=" " v-model="dndclass.classHitPointsAtHigh" @blur="v$.dndclass.classHitPointsAtHigh.$touch" @input="updateForm('classHitPointsAtHigh', $event.target.value)">
-                <label style="color: white;" for="classHitPointsAtHigh" class="form-label">classHitPointsAtHigh:</label>
+                <label style="color: white;" for="classHitPointsAtHigh" class="form-label">Na wyższych poziomach:</label>
                 <p style="color: red;"
                   class="fs-6"
                   v-for="error of v$.dndclass.classHitPointsAtHigh.$errors"
@@ -164,7 +164,7 @@
           <div class="row mt-4 justify-content-center">
             <div class="col-lg-6 mb-4 mb-md-5 input-field">
                 <input type="text" class="input" id="classArmorProficency" autocomplete="off" placeholder=" " v-model="dndclass.classArmorProficency" @blur="v$.dndclass.classArmorProficency.$touch" @input="updateForm('classArmorProficency', $event.target.value)">
-                <label style="color: white;" for="classArmorProficency" class="form-label">classArmorProficency:</label>
+                <label style="color: white;" for="classArmorProficency" class="form-label">Pancerz:</label>
                 <p style="color: red;"
                   class="fs-6"
                   v-for="error of v$.dndclass.classArmorProficency.$errors"
@@ -175,7 +175,7 @@
             </div>
             <div class="col-lg-6 mb-3 mb-md-5 input-field">
                 <input type="text" class="input" id="classWeaponProficency" autocomplete="off" placeholder=" " v-model="dndclass.classWeaponProficency" @blur="v$.dndclass.classWeaponProficency.$touch" @input="updateForm('classWeaponProficency', $event.target.value)">
-                <label style="color: white;" for="classWeaponProficency" class="form-label">classWeaponProficency:</label>
+                <label style="color: white;" for="classWeaponProficency" class="form-label">Bronie:</label>
                 <p style="color: red;"
                   class="fs-6"
                   v-for="error of v$.dndclass.classWeaponProficency.$errors"
@@ -188,7 +188,7 @@
           <div class="row mt-4 justify-content-center">
             <div class="col-lg-6 mb-4 mb-md-5 input-field">
                 <input type="text" class="input" id="classToolsProficency" autocomplete="off" placeholder=" " v-model="dndclass.classToolsProficency" @blur="v$.dndclass.classToolsProficency.$touch" @input="updateForm('classToolsProficency', $event.target.value)">
-                <label style="color: white;" for="classToolsProficency" class="form-label">classToolsProficency:</label>
+                <label style="color: white;" for="classToolsProficency" class="form-label">Narzędzia:</label>
                 <p style="color: red;"
                   class="fs-6"
                   v-for="error of v$.dndclass.classToolsProficency.$errors"
@@ -199,7 +199,7 @@
             </div>
             <div class="col-lg-6 mb-3 mb-md-5 input-field">
                 <input type="text" class="input" id="classSavingThrows" autocomplete="off" placeholder=" " v-model="dndclass.classSavingThrows" @blur="v$.dndclass.classSavingThrows.$touch" @input="updateForm('classSavingThrows', $event.target.value)">
-                <label style="color: white;" for="classSavingThrows" class="form-label">classSavingThrows:</label>
+                <label style="color: white;" for="classSavingThrows" class="form-label">Rzuty obronne:</label>
                 <p style="color: red;"
                   class="fs-6"
                   v-for="error of v$.dndclass.classSavingThrows.$errors"
@@ -212,7 +212,7 @@
           <div class="row mt-4 justify-content-center">
             <div class="col-lg-6 mb-4 mb-md-5 input-field">
                 <input type="text" class="input" id="classSkills" autocomplete="off" placeholder=" " v-model="dndclass.classSkills" @blur="v$.dndclass.classSkills.$touch" @input="updateForm('classSkills', $event.target.value)">
-                <label style="color: white;" for="classSkills" class="form-label">classSkills:</label>
+                <label style="color: white;" for="classSkills" class="form-label">Umiejętności:</label>
                 <p style="color: red;"
                   class="fs-6"
                   v-for="error of v$.dndclass.classSkills.$errors"
@@ -223,7 +223,7 @@
             </div>
             <div class="col-lg-6 mb-3 mb-md-5 input-field">
                 <input type="text" class="input" id="classEquipment" autocomplete="off" placeholder=" " v-model="dndclass.classEquipment" @blur="v$.dndclass.classEquipment.$touch" @input="updateForm('classEquipment', $event.target.value)">
-                <label style="color: white;" for="classEquipment" class="form-label">classEquipment:</label>
+                <label style="color: white;" for="classEquipment" class="form-label">Ekwipunek:</label>
                 <p style="color: red;"
                   class="fs-6"
                   v-for="error of v$.dndclass.classEquipment.$errors"
@@ -316,40 +316,40 @@ export default {
     },
     dndclass: {
       className: {
-         required: helpers.withMessage("Nazwa rasy jest wymagana", required),
+         required: helpers.withMessage("Nazwa klasy jest wymagana", required),
        },
        classDescription: {
-         required: helpers.withMessage("ASI rasy jest wymagane", required),
+         required: helpers.withMessage("Opis rasy jest wymagany", required),
        },
        classMulticlassReq: {
-         required: helpers.withMessage("Wiek rasy jest wymagany", required),
+         required: helpers.withMessage("Zasady multiklasowania są wymagane", required),
        },
        classHitDice: {
-         required: helpers.withMessage("Przynależność rasy jest wymagana", required),
+         required: helpers.withMessage("Kość życia jest wymagana", required),
        },
        classHitPointsAtFirst: {
-         required: helpers.withMessage("Rozmiar rasy jest wymagany", required),
+         required: helpers.withMessage("Życie na pierwszym poziomach jest wymagane", required),
        },
        classHitPointsAtHigh: {
-         required: helpers.withMessage("Prędkość rasy są wymagana", required),
+         required: helpers.withMessage("Życie na wyższych poziomach jest wymagane", required),
        },
        classArmorProficency: {
-         required: helpers.withMessage("Języki rasy są wymagane", required),
+         required: helpers.withMessage("Pancerz jest wymagany", required),
        },
        classWeaponProficency: {
-         required: helpers.withMessage("Opis rasy jest wymagany", required),
+         required: helpers.withMessage("Bronie są wymagane", required),
        },
        classToolsProficency: {
-         required: helpers.withMessage("Opis rasy jest wymagany", required),
+         required: helpers.withMessage("Narzędzia są wymagane", required),
        },
        classSavingThrows: {
-         required: helpers.withMessage("Opis rasy jest wymagany", required),
+         required: helpers.withMessage("Rzuty obronne są wymagane", required),
        },
        classSkills: {
-         required: helpers.withMessage("Opis rasy jest wymagany", required),
+         required: helpers.withMessage("Umiejętności są wymagane", required),
        },
        classEquipment: {
-         required: helpers.withMessage("Opis rasy jest wymagany", required),
+         required: helpers.withMessage("Ekwipunek jest wymagany", required),
        },
      },
    };

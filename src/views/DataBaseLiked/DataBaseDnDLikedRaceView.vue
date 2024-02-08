@@ -25,7 +25,7 @@
                     <th scope="col">Polubienia</th>
                 </tr>
             </thead>
-            <tbody v-if="this.items.length > 0">
+            <tbody v-if="filteredID.length > 0">
                     <tr v-for="item in VisiblePost" :key="item.raceId" class="position-relative">
                         <td v-if="item.inheritedRaceID == 0" scope="row">
                             <router-link class="stretched-link" style="text-decoration: none; color:whitesmoke" 
@@ -111,15 +111,20 @@
         };
     },
     computed: {
-        
-        filteredItems() {
-            const newArr = this.items.filter((item) => item !== null);
-            if (this.searchFilter !== '') {
+        filteredID() {
+                const newArr = this.items.filter((item) => item !== null);
+                
                 return newArr.filter(item => 
+                item.inheritedRaceID == 0);
+        },
+        filteredItems() {
+            
+            if (this.searchFilter !== '') {
+                return this.filteredID.filter(item => 
                 item.raceName.toLowerCase().includes(this.searchFilter));
             }
 
-            return newArr;
+            return this.filteredID;
         },
         VisiblePost() {
             const startPage = (this.currentPage - 1 ) *  this.itemPerPage;
@@ -160,7 +165,10 @@
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }
-                }).then(response => this.items = response.data);
+                }).then(response => {
+                    this.items = response.data
+                    console.log(this.items)
+                });
                 setTimeout(this.changeLoading, 3000);
 
             
