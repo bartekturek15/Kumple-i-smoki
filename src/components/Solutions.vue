@@ -113,7 +113,7 @@
                             data-aos-anchor-placement="top-center" 
                             class="col-md-6 p-0 d-xl-none">
                         <router-link style="text-decoration: none" to="/BazaDanychDnD">
-                            <div class="card mx-auto mt-4" style="width: 18rem;">
+                            <div class="card mx-auto mt-5" style="width: 18rem;">
                                 <img src="/1.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5>{{secondSolutionTitle}}</h5>
