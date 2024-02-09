@@ -148,8 +148,8 @@
 
 
         <div class="ps-5 pe-5 pb-3 mb-3" v-for="(line, index) in itemCustomFeatures" :key="index">
-            <p class="fs-5 d-inline fw-bold" style="color: white;">{{ line.featureName }}:</p> 
-            <p class="d-inline fs-5 ms-3" style="color: rgba(255, 255, 255, 0.850);">{{ line.featureDesc }}</p>
+            <p class="fs-5 d-inline fw-bold" style="color: white; white-space: pre-wrap;">{{ line.featureName }}:</p> 
+            <p class="d-inline fs-5 ms-3" style="color: rgba(255, 255, 255, 0.850); white-space: pre-wrap;">{{ line.featureDesc }}</p>
         </div> 
     </div>  
 </template>
