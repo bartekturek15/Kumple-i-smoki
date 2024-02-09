@@ -355,33 +355,7 @@ export default {
        enemySpeed: {
          required: helpers.withMessage("Prędkość przeciwnika jest wymagana", required),
        },
-       enemySavingThrows: {
-         required: helpers.withMessage("Rzuty obronne przeciwnika są wymagane", required),
-       },
-       enemySkills: {
-         required: helpers.withMessage("Umiejętności przeciwnika są wymagane", required),
-       },
-       enemyImmunes: {
-         required: helpers.withMessage("Nietykalność przeciwnika są wymagane", required),
-       },
-       enemyResistances: {
-         required: helpers.withMessage("Odporności przeciwnika są wymagane", required),
-       },
-       enemyVulnerabilities: { 
-         required: helpers.withMessage("Podatności przeciwnika są wymagane", required),
-       },
-       enemySenses: { 
-         required: helpers.withMessage("Zmysły przeciwnika są wymagane", required),
-       },
-       enemyLanguages: {
-         required: helpers.withMessage("Języki przeciwnika są wymagane", required),
-       },
-       enemyDangerLvl: {
-         required: helpers.withMessage("Poziom wyzwania przeciwnika są wymagane", required),
-       },
-       enemyProficencyBonus: {
-         required: helpers.withMessage("Premia do biegłości przeciwnika są wymagane", required),
-       },
+       
      },
    };
  },
