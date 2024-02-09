@@ -17,7 +17,7 @@
                     <img src="/3.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5>{{firstSolutionTitle}}</h5>
-                        <p class="card-text">Stwórz i dodaj do bazy danych elementy D&D. Takie jak klasy czy czary.</p>
+                        <p class="card-text">Stwórz elementy D&D do bazy danych, takie jak klasy czy czary.</p>
                     </div>
                 </div>
                 </router-link>
@@ -76,7 +76,7 @@
                             <img src="/2.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5>{{fourthSolutionTitle}}</h5>
-                                <p class="card-text">Forum, na którym możesz wyszukiwać i szukać osób do gry D&D.</p>
+                                <p class="card-text">Forum, na którym możesz wyszukiwać i zapraszać osoby do gry D&D.</p>
                             </div>
                         </div>
                     </router-link>
@@ -97,7 +97,7 @@
                                 <img src="/3.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5>{{firstSolutionTitle}}</h5>
-                                    <p class="card-text">Stwórz i dodaj do bazy danych elementy D&D. Takie jak klasy czy czary.</p>
+                                    <p class="card-text">Stwórz elementy D&D do bazy danych, takie jak klasy czy czary.</p>
                                 </div>
                             </div>
                         </router-link>
@@ -159,7 +159,7 @@
                                 <img src="/2.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5>{{fourthSolutionTitle}}</h5>
-                                    <p class="card-text">Forum, na którym możesz wyszukiwać i szukać osób do gry D&D.</p>
+                                    <p class="card-text">Forum, na którym możesz wyszukiwać osób do gry D&D.</p>
                                 </div>
                             </div>
                         </router-link>
