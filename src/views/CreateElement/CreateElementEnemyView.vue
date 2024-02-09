@@ -150,111 +150,57 @@
 
        <div class="row justify-content-center">
          <div class="col-lg-6 mb-4 mb-md-5 input-field">
-             <input type="text" class="input" id="enemySavingThrows" autocomplete="off" placeholder=" " :value="enemy.enemySavingThrows" @input="updateForm('enemySavingThrows', $event.target.value)" @blur="v$.enemy.enemySavingThrows.$touch">
+             <input type="text" class="input" id="enemySavingThrows" autocomplete="off" placeholder=" " :value="enemy.enemySavingThrows" @input="updateForm('enemySavingThrows', $event.target.value)">
              <label style="color: white;" for="enemySavingThrows" class="form-label">Rzuty obronne:</label>
-             <p style="color: red;"
-              class="fs-6"
-              v-for="error of v$.enemy.enemySavingThrows.$errors"
-              :key="error.$uid"
-            >
-              {{ error.$message }}
-            </p>
+             
          </div>
          <div class="col-lg-6 mb-4 mb-md-5 input-field">
-             <input type="text" class="input" id="enemySkills" autocomplete="off" placeholder=" " :value="enemy.enemySkills" @input="updateForm('enemySkills', $event.target.value)" @blur="v$.enemy.enemySkills.$touch">
+             <input type="text" class="input" id="enemySkills" autocomplete="off" placeholder=" " :value="enemy.enemySkills" @input="updateForm('enemySkills', $event.target.value)" >
              <label style="color: white;" for="enemySkills" class="form-label">Umiejętności:</label>
-             <p style="color: red;"
-              class="fs-6"
-              v-for="error of v$.enemy.enemySkills.$errors"
-              :key="error.$uid"
-            >
-              {{ error.$message }}
-            </p>
+             
          </div>
        </div>
        <div class="row justify-content-center">
          <div class="col-lg-6 mb-4 mb-md-5 input-field">
-             <input type="text" class="input" id="enemyImmunes" autocomplete="off" placeholder=" " :value="enemy.enemyImmunes" @input="updateForm('enemyImmunes', $event.target.value)" @blur="v$.enemy.enemyImmunes.$touch">
+             <input type="text" class="input" id="enemyImmunes" autocomplete="off" placeholder=" " :value="enemy.enemyImmunes" @input="updateForm('enemyImmunes', $event.target.value)">
              <label style="color: white;" for="enemyImmunes" class="form-label">Nietykalności:</label>
-             <p style="color: red;"
-              class="fs-6"
-              v-for="error of v$.enemy.enemyImmunes.$errors"
-              :key="error.$uid"
-            >
-              {{ error.$message }}
-            </p>
+             
          </div>
          <div class="col-lg-6 mb-4 mb-md-5 input-field">
-             <input type="text" class="input" id="enemyResistances" autocomplete="off" placeholder=" " :value="enemy.enemyResistances" @input="updateForm('enemyResistances', $event.target.value)" @blur="v$.enemy.enemyResistances.$touch">
+             <input type="text" class="input" id="enemyResistances" autocomplete="off" placeholder=" " :value="enemy.enemyResistances" @input="updateForm('enemyResistances', $event.target.value)" >
              <label style="color: white;" for="enemyResistances" class="form-label">Odporności:</label>
-             <p style="color: red;"
-              class="fs-6"
-              v-for="error of v$.enemy.enemyResistances.$errors"
-              :key="error.$uid"
-            >
-              {{ error.$message }}
-            </p>
+             
          </div>
        </div>
        <div class="row justify-content-center">
          <div class="col-lg-6 mb-4 mb-md-5 input-field">
-             <input type="text" class="input" id="enemyVulnerabilities" autocomplete="off" placeholder=" " :value="enemy.enemyVulnerabilities" @input="updateForm('enemyVulnerabilities', $event.target.value)" @blur="v$.enemy.enemyVulnerabilities.$touch">
+             <input type="text" class="input" id="enemyVulnerabilities" autocomplete="off" placeholder=" " :value="enemy.enemyVulnerabilities" @input="updateForm('enemyVulnerabilities', $event.target.value)">
              <label style="color: white;" for="enemyVulnerabilities" class="form-label">Podatności:</label>
-             <p style="color: red;"
-              class="fs-6"
-              v-for="error of v$.enemy.enemyVulnerabilities.$errors"
-              :key="error.$uid"
-            >
-              {{ error.$message }}
-            </p>
+             
          </div>
          <div class="col-lg-6 mb-4 mb-md-5 input-field">
-             <input type="text" class="input" id="enemySenses" autocomplete="off" placeholder=" " :value="enemy.enemySenses" @input="updateForm('enemySenses', $event.target.value)" @blur="v$.enemy.enemySenses.$touch">
+             <input type="text" class="input" id="enemySenses" autocomplete="off" placeholder=" " :value="enemy.enemySenses" @input="updateForm('enemySenses', $event.target.value)" >
              <label style="color: white;" for="enemySenses" class="form-label">Zmysły:</label>
-             <p style="color: red;"
-              class="fs-6"
-              v-for="error of v$.enemy.enemySenses.$errors"
-              :key="error.$uid"
-            >
-              {{ error.$message }}
-            </p>
+            
          </div>
        </div>
        <div class="row justify-content-center">
          <div class="col-lg-6 mb-4 mb-md-5 input-field">
-             <input type="text" class="input" id="enemyLanguages" autocomplete="off" placeholder=" " :value="enemy.enemyLanguages" @input="updateForm('enemyLanguages', $event.target.value)" @blur="v$.enemy.enemyLanguages.$touch">
+             <input type="text" class="input" id="enemyLanguages" autocomplete="off" placeholder=" " :value="enemy.enemyLanguages" @input="updateForm('enemyLanguages', $event.target.value)">
              <label style="color: white;" for="enemyLanguages" class="form-label">Języki:</label>
-             <p style="color: red;"
-              class="fs-6"
-              v-for="error of v$.enemy.enemyLanguages.$errors"
-              :key="error.$uid"
-            >
-              {{ error.$message }}
-            </p>
+             
          </div>
          <div class="col-lg-6 mb-4 mb-md-5 input-field">
-             <input type="text" class="input" id="enemyDangerLvl" autocomplete="off" placeholder=" " :value="enemy.enemyDangerLvl" @input="updateForm('enemyDangerLvl', $event.target.value)" @blur="v$.enemy.enemyDangerLvl.$touch">
+             <input type="text" class="input" id="enemyDangerLvl" autocomplete="off" placeholder=" " :value="enemy.enemyDangerLvl" @input="updateForm('enemyDangerLvl', $event.target.value)">
              <label style="color: white;" for="enemyDangerLvl" class="form-label">Poziom wyzwania:</label>
-             <p style="color: red;"
-              class="fs-6"
-              v-for="error of v$.enemy.enemyDangerLvl.$errors"
-              :key="error.$uid"
-            >
-              {{ error.$message }}
-            </p>
+             
          </div>
        </div>
        <div class="row justify-content-center">
          <div class="mb-4 mb-md-5 input-field">
-            <input type="text" class="input" id="enemyProficencyBonus" autocomplete="off" placeholder=" " :value="enemy.enemyProficencyBonus" @input="updateForm('enemyProficencyBonus', $event.target.value)" @blur="v$.enemy.enemyProficencyBonus.$touch">
+            <input type="text" class="input" id="enemyProficencyBonus" autocomplete="off" placeholder=" " :value="enemy.enemyProficencyBonus" @input="updateForm('enemyProficencyBonus', $event.target.value)">
              <label style="color: white;" for="enemyProficencyBonus" class="form-label">Premia do biegłości:</label>
-             <p style="color: red;"
-              class="fs-6"
-              v-for="error of v$.enemy.enemyProficencyBonus.$errors"
-              :key="error.$uid"
-            >
-              {{ error.$message }}
-            </p>
+             
          </div>
          <div class="row justify-content-end">
           <button class="submit mt-3" type="submit" :disabled="submitStatus === 'PENDING'">Stwórz przeciwnika</button>
