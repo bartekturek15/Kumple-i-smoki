@@ -1,10 +1,12 @@
 <template>
-    <Problem />
-    <Solutions />
-    <Discord />
-    <Aboutus />
-    <Faq />
-    <Footer />
+    <div class="wrap">
+        <Problem />
+        <Solutions />
+        <Discord />
+        <Aboutus />
+        <Faq />
+        <Footer />
+    </div>
  
     
 
@@ -36,4 +38,8 @@
 </script>
 
 <style scoped>
+    .wrap{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 </style>

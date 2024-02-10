@@ -1576,6 +1576,7 @@
     }
     .wid {
         min-width: 1330px;
+        overflow-x: scroll !important;
     }
    .namebox {
     background: #2e2e36;
