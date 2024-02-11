@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="createPost">
-    <h1 class="display-6 text-light text-center mt-4 ps-3 pe-3">Wypełnij pola, by dodać przedmiot do bazy elementów</h1>
+    <h1 class="display-6 text-light text-center mt-4 ps-3 pe-3">Wypełnij pola, by zmienić nazwę użytkownika</h1>
     <div style="background: #2e2e36;" class="container mb-5 input-box right p-5 mt-4 fs-5">
       
        <div class="justify-content-center">
@@ -18,7 +18,7 @@
        </div>
        <div class="row justify-content-center">
          <div class="row justify-content-end">
-          <button class="submit mt-3" type="submit" :disabled="submitStatus === 'PENDING'">Stwórz przedmiot:</button>
+          <button class="submit mt-3" type="submit" :disabled="submitStatus === 'PENDING'">Zmień nazwe użytkownika:</button>
          </div>
        </div>
           <div class="row">

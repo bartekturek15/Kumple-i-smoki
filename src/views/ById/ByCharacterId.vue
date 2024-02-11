@@ -12,7 +12,13 @@
             <div class="col-3 classbox border border-end-0 rounded-start pt-4">
                 <div class="d-block input-field">
                     <input type="text" class="input me-2 inp" id="Classn" autocomplete="off" placeholder="Paladyn" v-model="classitems.className" disabled>
-                    <div class="text-start ms-5 "><label style="color: whitesmoke;" for="characterExperience">Klasa </label></div>
+                    <div class="text-start ms-5 "><label style="color: whitesmoke;" for="characterExperience"> 
+                    <router-link style="text-decoration: none; color:white" :to="`/Klasy/${character.characterDndClassId}`">Klasa 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+                            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"/>
+                            </svg></router-link>
+                </label></div>
                 </div>
                 <div class="d-block input-field mt-2">
                     <input type="text" class="input me-2 inp" id="Racen" autocomplete="off" placeholder="Elf" v-model="raceitems.raceName" disabled>
@@ -1477,7 +1483,8 @@
     border: none;
 }
  .wid {
-    min-width: 1200px;
+    min-width: 1330px;
+    overflow-x: scroll !important;
 }
  .namebox {
 background: #2e2e36;

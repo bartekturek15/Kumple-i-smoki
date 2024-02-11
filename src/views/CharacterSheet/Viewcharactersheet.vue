@@ -100,7 +100,7 @@
 <script>
     import Navbar from '../../components/Navbar.vue';
     import Searchbar from '../../components/Searchbar.vue';
-
+    import {mapGetters} from 'vuex'
     import axios from 'axios';
 
     export default {
@@ -120,6 +120,7 @@
         };
     },
     computed: {
+        ...mapGetters(['user']),
         filteredItems() {
             if (this.searchFilter !== '') {
                 return this.items.filter(item => 
@@ -163,7 +164,7 @@
         }
     },
     mounted() {
-        axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/Character')
+        axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/Character/owner/' + this.user.userID )
             .then(response => this.items = response.data);
             setTimeout(this.changeLoading, 3000);
 

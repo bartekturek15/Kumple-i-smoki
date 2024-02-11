@@ -1199,6 +1199,7 @@
                       response => {
                               setTimeout(() => {
                                   this.submitStatus = 'OK'
+                                  localStorage.removeItem('characterProficencyBools');
                                   localStorage.removeItem('character');
                                   localStorage.removeItem( 'Racen');
                                   localStorage.removeItem( 'Classn');
