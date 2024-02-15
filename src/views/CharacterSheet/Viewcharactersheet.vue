@@ -33,7 +33,7 @@
         <table class="table custom-table table-dark mx-auto">
             <thead>
                 <tr>
-                    <th scope="col">characterName</th>
+                    <th scope="col">Nazwa postaci</th>
                 </tr>
             </thead>
             <tbody v-if="this.items.length > 0">

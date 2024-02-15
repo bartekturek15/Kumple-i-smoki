@@ -455,7 +455,7 @@
                 }
                     
                     this.character.characterSavingThrowStrength = parseInt(this.character.characterSavingThrowStrength) + parseInt(newval);
-                    this.updateForm ('characterSavingThrowStrength', this.character.characterSavingThrowStrength)
+                    
             }
             if(this.character.characterProficencyBools[1] == true && this.character.characterProficencyBonus !== "" ) {
                 if(oldval !== "") {
@@ -463,7 +463,7 @@
                 }
                 
                     this.character.characterSavingThrowDexterity = parseInt(this.character.characterSavingThrowDexterity) + parseInt(newval);
-                    this.updateForm ('characterSavingThrowDexterity', this.character.characterSavingThrowDexterity)
+                   
             }
             if(this.character.characterProficencyBools[2] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -471,7 +471,7 @@
                 }
         
                     this.character.characterSavingThrowConstitution = parseInt(this.character.characterSavingThrowConstitution) + parseInt(newval);
-                    this.updateForm ('characterSavingThrowConstitution', this.character.characterSavingThrowConstitution)
+                    
             }
             if(this.character.characterProficencyBools[3] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -479,7 +479,7 @@
                 }
                 
                     this.character.characterSavingThrowInteligence = parseInt(this.character.characterSavingThrowInteligence) + parseInt(newval);
-                    this.updateForm ('characterSavingThrowInteligence', this.character.characterSavingThrowInteligence)
+                   
             }
             if(this.character.characterProficencyBools[4] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -487,7 +487,7 @@
                 }
                 
                     this.character.characterSavingThrowWisdom = parseInt(this.character.characterSavingThrowWisdom) + parseInt(newval);
-                    this.updateForm ('characterSavingThrowWisdom', this.character.characterSavingThrowWisdom)
+                    
             }
             if(this.character.characterProficencyBools[5] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -495,7 +495,7 @@
                 }
                 
                     this.character.characterSavingThrowCharisma = parseInt(this.character.characterSavingThrowCharisma) + parseInt(newval);
-                    this.updateForm ('characterSavingThrowCharisma', this.character.characterSavingThrowCharisma)
+                   
             }
             if(this.character.characterProficencyBools[6] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -503,7 +503,7 @@
                 }
                 
                     this.character.characterSkillAcrobatics = parseInt(this.character.characterSkillAcrobatics) + parseInt(newval);
-                    this.updateForm ('characterSkillAcrobatics', this.character.characterSkillAcrobatics)
+                 
             }
             if(this.character.characterProficencyBools[7] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -511,7 +511,7 @@
                 }
                 
                     this.character.characterSkillAnimalHandling = parseInt(this.character.characterSkillAnimalHandling) + parseInt(newval);
-                    this.updateForm ('characterSkillAnimalHandling', this.character.characterSkillAnimalHandling)
+               
             }
             if(this.character.characterProficencyBools[8] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -519,7 +519,7 @@
                 }
                 
                     this.character.characterSkillArcana = parseInt(this.character.characterSkillArcana) + parseInt(newval);
-                    this.updateForm ('characterSkillArcana', this.character.characterSkillArcana)
+                 
             }
             if(this.character.characterProficencyBools[9] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -527,7 +527,7 @@
                 }
                 
                     this.character.characterSkillAthletics = parseInt(this.character.characterSkillAthletics) + parseInt(newval);
-                    this.updateForm ('characterSkillAthletics', this.character.characterSkillAthletics)
+                  
             }
             if(this.character.characterProficencyBools[10] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -535,7 +535,7 @@
                 }
                 
                     this.character.characterSkillDeception = parseInt(this.character.characterSkillDeception) + parseInt(newval);
-                    this.updateForm ('characterSkillDeception', this.character.characterSkillDeception)
+                 
             }
             if(this.character.characterProficencyBools[11] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -543,7 +543,7 @@
                 }
                 
                     this.character.characterSkillHistory = parseInt(this.character.characterSkillHistory) + parseInt(newval);
-                    this.updateForm ('characterSkillHistory', this.character.characterSkillHistory)
+            
             }
             if(this.character.characterProficencyBools[12] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -551,7 +551,7 @@
                 }
                 
                     this.character.characterSkillInsight = parseInt(this.character.characterSkillInsight) + parseInt(newval);
-                    this.updateForm ('characterSkillInsight', this.character.characterSkillInsight)
+                 
             }
             if(this.character.characterProficencyBools[13] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -559,7 +559,7 @@
                 }
                 
                     this.character.characterSkillIntimidation = parseInt(this.character.characterSkillIntimidation) + parseInt(newval);
-                    this.updateForm ('characterSkillIntimidation', this.character.characterSkillIntimidation)
+             
             }
             if(this.character.characterProficencyBools[14] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -567,7 +567,7 @@
                 }
                 
                     this.character.characterSkillInvestigation = parseInt(this.character.characterSkillInvestigation) + parseInt(newval);
-                    this.updateForm ('characterSkillInvestigation', this.character.characterSkillInvestigation)
+                  
             }
             if(this.character.characterProficencyBools[15] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -575,7 +575,7 @@
                 }
                 
                     this.character.characterSkillMedicine = parseInt(this.character.characterSkillMedicine) + parseInt(newval);
-                    this.updateForm ('characterSkillMedicine', this.character.characterSkillMedicine)
+             
             }
             if(this.character.characterProficencyBools[16] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -583,7 +583,7 @@
                 }
                 
                     this.character.characterSkillNature = parseInt(this.character.characterSkillNature) + parseInt(newval);
-                    this.updateForm ('characterSkillNature', this.character.characterSkillNature)
+          
             }
             if(this.character.characterProficencyBools[17] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -591,7 +591,7 @@
                 }
                 
                     this.character.characterSkillPerception = parseInt(this.character.characterSkillPerception) + parseInt(newval);
-                    this.updateForm ('characterSkillPerception', this.character.characterSkillPerception)
+           
             }
             if(this.character.characterProficencyBools[18] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -599,7 +599,7 @@
                 }
                 
                     this.character.characterSkillPerformance = parseInt(this.character.characterSkillPerformance) + parseInt(newval);
-                    this.updateForm ('characterSkillPerformance', this.character.characterSkillPerformance)
+          
             }
             if(this.character.characterProficencyBools[19] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -607,7 +607,7 @@
                 }
                 
                     this.character.characterSkillPersuation = parseInt(this.character.characterSkillPersuation) + parseInt(newval);
-                    this.updateForm ('characterSkillPersuation', this.character.characterSkillPersuation)
+                  
             }
             if(this.character.characterProficencyBools[20] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -615,7 +615,7 @@
                 }
                 
                     this.character.characterSkillReligion = parseInt(this.character.characterSkillReligion) + parseInt(newval);
-                    this.updateForm ('characterSkillReligion', this.character.characterSkillReligion)
+                 
             }
             if(this.character.characterProficencyBools[21] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -623,7 +623,7 @@
                 }
                 
                     this.character.characterSkillSleightOfHand = parseInt(this.character.characterSkillSleightOfHand) + parseInt(newval);
-                    this.updateForm ('characterSkillSleightOfHand', this.character.characterSkillSleightOfHand)
+              
             }
             if(this.character.characterProficencyBools[22] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -631,7 +631,7 @@
                 }
                 
                     this.character.characterSkillStealth = parseInt(this.character.characterSkillStealth) + parseInt(newval);
-                    this.updateForm ('characterSkillStealth', this.character.characterSkillStealth)
+
             }
             if(this.character.characterProficencyBools[23] == true && this.character.characterProficencyBonus !== "") {
                 if(oldval !== "") {
@@ -639,7 +639,7 @@
                 }
                 
                     this.character.characterSkillSurvival = parseInt(this.character.characterSkillSurvival) + parseInt(newval);
-                    this.updateForm ('characterSkillSurvival', this.character.characterSkillSurvival)
+               
             }
                     
         }
