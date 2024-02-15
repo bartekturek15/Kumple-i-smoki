@@ -129,7 +129,6 @@
                 item.inheritedRaceID != 0);
         },
         filteredItems() {
-            console.log(this.filteredID)
             if (this.searchFilter !== '') {
                 return this.filteredID.filter(item => 
                 item.raceName.toLowerCase().includes(this.searchFilter.toLowerCase()));

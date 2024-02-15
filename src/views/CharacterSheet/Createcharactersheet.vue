@@ -483,8 +483,6 @@
       },
       watch: {
         'character.characterProficencyBonus'(newval, oldval) {
-            console.log(newval)
-            console.log(oldval)
             if(this.character.characterProficencyBools[0] == true && this.character.characterProficencyBonus !== "" ) {
                 if(oldval !== "") {
                     this.character.characterSavingThrowStrength = parseInt(this.character.characterSavingThrowStrength) - parseInt(oldval);
@@ -852,7 +850,6 @@
                 this.character.characterSkillSurvival = parseInt(this.character.characterSkillSurvival) - parseInt(this.character.characterProficencyBonus);
 
         } 
-        console.log(this.character.characterProficencyBools)       
       },
    methods: {
     addProfBonus(num) {

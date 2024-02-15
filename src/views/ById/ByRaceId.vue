@@ -142,7 +142,6 @@ export default {
         axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/Race/id/' + this.id)
             .then(response => {
                 this.item = response.data
-                console.log(this.item)
             });
         axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/CustomRaceFeature/' + this.id)
             .then(response => this.itemCustomFeatures = response.data);

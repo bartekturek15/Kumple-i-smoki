@@ -128,7 +128,6 @@
                 item.inheritedRaceID == 0);
         },
         filteredItems() {
-            console.log(this.filteredID)
             if (this.searchFilter !== '') {
                 return this.items.filteredID(item => 
                 item.raceName.toLowerCase().includes(this.searchFilter));
@@ -174,7 +173,6 @@
         axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/Race')
             .then(response => {
                 this.items = response.data
-                console.log(this.items)
             });
             setTimeout(this.changeLoading, 3000);
 

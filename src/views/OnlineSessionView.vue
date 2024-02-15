@@ -1,5 +1,9 @@
 <template>
-    <h1 style="color: white">OnlineSession</h1>
+    <div style="color: white" class="container">
+        <h2 class="text-center mt-5" >Wiemy, że wszyscy czekają z niecierpliwością na sesje online,
+        <br />  ale musicie jeszcze trochę poczekać, pracujemy nad tym.</h2>
+        <p class="text-center fs-5">-Ekipa Kumple i Smoki</p>
+    </div>
 </template>
 
 <script>

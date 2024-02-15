@@ -264,9 +264,6 @@ export default {
         -o-transition: .3s all ease;
         transition: .3s all ease; 
     }
-     
-
-       
     .discolor {
         color: gray !important;    
     }

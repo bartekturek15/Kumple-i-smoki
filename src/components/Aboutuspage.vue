@@ -2,9 +2,7 @@
     <div class="container-fluid p-0">
         <div id="aboutuspage1" class="bg-light m-0 p-0">
             <div class="container-fluid">
-                <div class="row"
-                >
-                    
+                <div class="row">
                         <div class="col-lg-6 text-center p-3 mt-3 mb-3 d-none d-xl-block">
                             <img :src="text" class="img-fluid rounded" alt="..."
                                     @mouseover="text = '/my1.png'"
@@ -48,9 +46,6 @@
                                 </p>
                             </div>
                         </div>
-            
-
-                   
                         <div class="col-lg-6 d-xl-none">
                             <div class="text-start mt-sm-5 mt-3 ms-4">
                                 <h1 data-aos="fade-right"
@@ -94,8 +89,6 @@
                                     data-aos-anchor-placement="top-center"
                             >
                         </div>
-                    
-                    
                 </div>
             </div>
         </div>
@@ -110,19 +103,11 @@
                 text: '/My.png'
             }
         },
-        methods: {
-            
-        }
         }
 
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-    *{
-        font-family: 'Poppins', sans-serif;
-    }
-
     #aboutuspage1 {
         min-height: 55vh;
         

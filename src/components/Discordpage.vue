@@ -68,10 +68,8 @@
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-    *{
-        font-family: 'Poppins', sans-serif;
-    }
+
+    
     .discordwid {
         opacity: 90%;
         
@@ -87,43 +85,43 @@
         background-color: whitesmoke; 
         color: black;
     }
-.cta {
-    opacity: 80%;
-    font-weight: 500 !important;
-    padding: 12px 20px !important;
-    margin: 0 !important;
-}
-.grow {
-    transition: all .2s ease-in;
-}
-.grow:hover {
-    transition: all .2s ease-in-out;
-    transform: scale(1.1);
-}
+    .cta {
+        opacity: 80%;
+        font-weight: 500 !important;
+        padding: 12px 20px !important;
+        margin: 0 !important;
+    }
+    .grow {
+        transition: all .2s ease-in;
+    }
+    .grow:hover {
+        transition: all .2s ease-in-out;
+        transform: scale(1.1);
+    }
 
-#discordpage1 {
-    min-height: 75vh;
-    
-}
+    #discordpage1 {
+        min-height: 75vh;
+        
+    }
 
-@media screen and (max-width:  768px) {
-        #discordpage1 {
-            min-height: 60vh;
-            
-}
-      }
-#discordpage {
-    min-height: 75vh;
-    background-image: url("/banerdnd.png");
-    background-size: 100% 100%;
-}
-
-@media screen and (max-width:  768px) {
-        #discordpage {
-            min-height: 75vh;
-            background-image: none;
-            
+    @media screen and (max-width:  768px) {
+            #discordpage1 {
+                min-height: 60vh;
+                
+    }
         }
-      }
+    #discordpage {
+        min-height: 75vh;
+        background-image: url("/banerdnd.png");
+        background-size: 100% 100%;
+    }
+
+    @media screen and (max-width:  768px) {
+            #discordpage {
+                min-height: 75vh;
+                background-image: none;
+                
+            }
+        }
 
 </style>

@@ -127,7 +127,6 @@ export default {
         
     },
     mounted() {
-        console.log(localStorage.getItem('token'))
         axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/Spell/id/' + this.id)
             .then(response => this.item = response.data);
 

@@ -283,8 +283,6 @@ export default {
       this.saveStorage(storedForm) 
     },
     async createPost() {
-      console.log(this.race.raceTableData)
-      console.log(this.race.raceTableHeader)
       const isFormCorrect = await this.v$.$validate()
       if (isFormCorrect) 
     {

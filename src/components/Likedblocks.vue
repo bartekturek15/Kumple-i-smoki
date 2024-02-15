@@ -190,9 +190,7 @@ export default {
 </script>
 
 <style scoped>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
-    *{
-        font-family: 'Poppins', sans-serif;
+    *{ 
         font-size: 1.35rem;
     }
     @media screen and (min-width:  992px) {

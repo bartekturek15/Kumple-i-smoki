@@ -181,7 +181,6 @@
                 }
                 }).then(response => {
                     this.items = response.data
-                    console.log(this.items)
                 });
                 setTimeout(this.changeLoading, 3000);
 
