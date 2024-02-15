@@ -29,13 +29,15 @@
        </div>
        <div class="row justify-content-center">
          <div class="row justify-content-end">
-          <button class="submit mt-3" type="submit" :disabled="submitStatus === 'PENDING'">Zmień hasło:</button>
+          <button class="submit mt-3" type="submit" :disabled="submitStatus === 'PENDING'">Zmień hasło</button>
          </div>
        </div>
           <div class="row">
             <p style="color: red;" class="mt-2 d-flex justify-content-center" v-if="submitStatus === 'OK'">Hasło zostało zmienione.</p>
             <p style="color: red;" class="mt-2 d-flex justify-content-center" v-if="submitStatus === 'ERROR'">Prosimy o poprawne wypełnienie formularza.</p>
             <p style="color: red;" class="mt-2 d-flex justify-content-center" v-if="submitStatus === 'PENDING'">Wysyłanie...</p>
+            <p style="color: red;" class="mt-2 d-flex justify-content-center" v-if="submitStatus === 'LOGERROR'">Niepoprawne hasło</p>
+            
           </div>
       </div>
    </form>
@@ -92,10 +94,16 @@ export default {
                             headers: {
                                 Authorization: 'Bearer ' + localStorage.getItem('token')
                             }
-                            }).then( 
+                            }).catch(
+                            err => {
+                                this.submitStatus = 'LOGERROR'     
+                                }
+                            ).then( 
                     response => {
                             setTimeout(() => {
-                                this.submitStatus = 'OK'  
+                                if(this.submitStatus != 'LOGERROR')  {
+                                  this.submitStatus = 'OK'
+                                }
                             }, 500)
                     })  
     }

@@ -18,7 +18,7 @@
        </div>
        <div class="row justify-content-center">
          <div class="row justify-content-end">
-          <button class="submit mt-3" type="submit" :disabled="submitStatus === 'PENDING'">Zmień nazwe użytkownika:</button>
+          <button class="submit mt-3" type="submit" :disabled="submitStatus === 'PENDING'">Zmień nazwe użytkownika</button>
          </div>
        </div>
           <div class="row">
