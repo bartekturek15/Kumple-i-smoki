@@ -1,7 +1,7 @@
 <template>
   
     <div style="background: #2e2e36;" class="container  input-box right p-5 mt-4 mb-5 fs-5">
-      <h1 class="display-6 text-light text-center mt-4 mb-5 ps-3 pe-3">Wypełnij pola, by dodać do stworzonej podrasy cechy</h1>
+      <h1 class="display-6 text-light text-center mt-4 mb-5 ps-3 pe-3">Wypełnij pola, by dodać do stworzonej podklasy cechy</h1>
           <div class="row justify-content-center mt-3">
         <div class=" mb-4 mt-3 mb-md-5 input-field">
              <input type="text" class="input" id="featureName" autocomplete="off" placeholder=" " v-model="raceFeature.featureName" @input="updateForm('featureName', $event.target.value)"  @blur="v$.raceFeature.featureName.$touch">
@@ -32,10 +32,10 @@
             <button class="submit ms-auto" @click="finalizePost">Zakończ tworzenie</button>
           </div>
           <div class="row">
-            <p style="color: red;" class="mt-2 d-flex justify-content-center" v-if="submitStatus === 'OK'">Dodałes ceche do rasy</p>
+            <p style="color: red;" class="mt-2 d-flex justify-content-center" v-if="submitStatus === 'OK'">Dodałes ceche do podklasy</p>
             <p style="color: red;" class="mt-2 d-flex justify-content-center" v-if="submitStatus === 'ERROR'">Prosimy o poprawne wypełnienie formularza.</p>
             <p style="color: red;" class="mt-2 d-flex justify-content-center" v-if="submitStatus === 'PENDING'">Wysyłanie...</p>
-            <p style="color: red;" class="mt-2 d-flex justify-content-center" v-if="submitStatus === 'FINAL'">Przenosimy cię do stworzonej rasy</p>
+            <p style="color: red;" class="mt-2 d-flex justify-content-center" v-if="submitStatus === 'FINAL'">Przenosimy cię do stworzonej podklasy</p>
           </div>
           
         </div>
@@ -76,7 +76,7 @@ export default {
  },
  computed: {
         ...mapGetters(['user']),
-        ...mapGetters(['raceID'])
+        ...mapGetters(['subclassID'])
     },
  methods: {
   clearFields() {
@@ -105,7 +105,7 @@ export default {
       this.submitStatus = 'PENDING'
         this.submitStatus = 'FINAL'
         setTimeout(() => {
-        this.$router.push('/Rasy/' + this.raceID) 
+        this.$router.push('/Podklasy/' + this.subclassID) 
       }, 2000) 
     },
     async createPost() {
@@ -114,7 +114,7 @@ export default {
     {
         this.submitStatus = 'PENDING'
         
-        axios.post('https://kumpleismokibbkservice.azurewebsites.net/api/CustomRaceFeature?raceId=' + this.raceID, this.raceFeature, {
+        axios.post('https://kumpleismokibbkservice.azurewebsites.net/api/CustomDndSubclassFeature?subclassid=' + this.subclassID, this.raceFeature, {
                             headers: {
                                 Authorization: 'Bearer ' + localStorage.getItem('token')
                             }

@@ -38,50 +38,17 @@
         </button>
     </div>
     <div style="background: #2e2e36;" class="container pb-4">
-        <h1 class="display-6 mb-1 mt-4 fw-bold ps-5 pt-5" style="color: white;">{{ item.raceName }}</h1> <br>  
+        <h1 class="display-6 mb-1 mt-4 fw-bold ps-5 pt-5" style="color: white;">{{ item.subclassName }}</h1> <br>  
         <div class="mt-1 ps-5 pe-5 mb-5">
             <p class="d-inline fs-5" style="color: white;">
-                {{ item.raceDescription }}
+                {{ item.subclassDesc }}
             </p>
         </div>
-         
-        <div class="ps-5 pb-3 mb-3">
-            <p class="fs-5 d-inline fw-bold" style="color: white;">Zwiększenie wyniku umiejętności:</p> <p class="d-inline fs-5 ms-3" style="color: white;">{{ item.abilityScoreIncrease }}</p>
-        </div>  
-        <div class="ps-5 pb-3 mb-3">
-            <p class="fs-5 d-inline fw-bold" style="color: white;">Wiek:</p> <p class="d-inline fs-5 ms-3" style="color: white;">{{ item.age }}</p>
-        </div>
-        <div class="ps-5 pb-3 mb-3">
-            <p class="fs-5 d-inline fw-bold" style="color: white;">Przynależność:</p> <p class="d-inline fs-5 ms-3" style="color: white;">{{ item.alignment }}</p>
-        </div>
-        <div class="ps-5 pb-3 mb-3">
-            <p class="fs-5 d-inline fw-bold" style="color: white;">Rozmiar:</p> <p class="d-inline fs-5 ms-3" style="color: white;">{{ item.size }}</p>
-        </div>
-        <div class="ps-5 pb-3 mb-3">
-            <p class="fs-5 d-inline fw-bold" style="color: white;">Szybkość:</p> <p class="d-inline fs-5 ms-3" style="color: white;">{{ item.speed }}</p>
-        </div>
         <div class="ps-5 pb-3 mb-3" v-for="(line, index) in itemCustomFeatures" :key="index_row">
-            <p class="fs-5 d-inline fw-bold" style="color: white;">Custom Feature:</p> <p class="d-inline fs-5 ms-3" style="color: white;">{{ line.featureDesc }}</p>
-        </div>
-        
-
-        <div class="ps-5 pe-5 mb-3 pt-3">
-            <table v-if="item.tableData != ''" class="table custom-table table-dark mx-auto">
-                <thead>
-                    <tr>
-                        <th v-for="(line, index_row) in item.tableHeader" :key="index_row" scope="col">{{ line }}</th>
-                    </tr>
-                </thead>
-                <tbody>   
-                    <tr v-for="(line, index_col) in item.tableData" :key="index_col"  class="position-relative">
-                        <td v-for="(cell, index_col) in line" :key="index_col" v-if="cell != line[0]" scope="row">
-                            {{ cell }}
-                        </td>  
-                    </tr>
-                </tbody>
-            </table>
+            <p class="fs-5 d-inline fw-bold" style="color: rgba(255, 255, 255, 0.950);">{{ line.featureName }}:</p> <p class="d-inline fs-5 ms-3" style="color: rgba(255, 255, 255, 0.850);">{{ line.featureDesc }}</p>
         </div>
     </div>  
+    
 </template>
 
 <script>
@@ -89,7 +56,7 @@ import axios from 'axios';
 
 
 export default {
-    name: "ByRaceId",
+    name: "BySubclassId",
     props: ['id', 'link', 'doDelete'],
     data() {
         return {
@@ -112,7 +79,7 @@ export default {
     methods: {
         deleted() {
             
-            axios.delete('https://kumpleismokibbkservice.azurewebsites.net/api/Spell', {
+            axios.delete('https://kumpleismokibbkservice.azurewebsites.net/api/DndSubclass', {
                 headers: {
                                 Authorization: 'Bearer ' + localStorage.getItem('token')
                         },
@@ -135,9 +102,9 @@ export default {
         },
     },
     mounted() {
-        axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/Race/id/' + this.id)
+        axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/DndSubclass/id/' + this.id)
             .then(response => this.item = response.data);
-        axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/CustomRaceFeature/' + this.id)
+        axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/CustomDndSubclassFeature/subclass/' + this.id)
             .then(response => this.itemCustomFeatures = response.data);    
         
             if(this.link == null) {

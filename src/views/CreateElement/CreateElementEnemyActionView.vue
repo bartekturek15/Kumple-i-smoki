@@ -151,6 +151,12 @@ export default {
                     response => {
                             setTimeout(() => {
                                 this.submitStatus = 'OK'
+
+                                this.clearFields()
+                                this.v$.enemyAction.actionName.$reset()
+                                this.v$.enemyAction.actionDesc.$reset()
+                                this.v$.enemyAction.actionType.$reset()
+                                
                                 localStorage.removeItem('enemyAction');    
                             }, 500) 
                     })  

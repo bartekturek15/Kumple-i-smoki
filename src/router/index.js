@@ -50,7 +50,9 @@ import CreateElementItemView from '../views/CreateElement/CreateElementItemView.
 import CreateElementRaceView from '../views/CreateElement/CreateElementRaceView.vue';
 import CreateElementRaceFeatureView from '../views/CreateElement/CreateElementRaceFeatureView.vue';
 import CreateElementSubraceView from '../views/CreateElement/CreateElementSubraceView.vue';
+import CreateElementSubclassView from '../views/CreateElement/CreateElementSubclassView.vue';
 import CreateElementSubraceFeatureView from '../views/CreateElement/CreateElementSubraceFeatureView.vue';
+import CreateElementSubclassFeatureView from '../views/CreateElement/CreateElementSubclassFeatureView.vue';
 
 import changePassword from '../views/changePassword.vue';
 import changeUsername from '../views/changeUsername.vue';
@@ -248,6 +250,20 @@ const routes = [
         path: '/TworzenieCechyPodras',
         name: 'CreateElementSubraceFeatureView',
         component: CreateElementSubraceFeatureView,
+        props: true
+        
+    },
+    {
+        path: '/TworzeniePodklas',
+        name: 'CreateElementSubclassView',
+        component: CreateElementSubclassView,
+        props: true
+        
+    },
+    {
+        path: '/TworzenieCechyPodklas',
+        name: 'CreateElementSubclassFeatureView',
+        component: CreateElementSubclassFeatureView,
         props: true
         
     },

@@ -7,7 +7,8 @@ const state = {
     user: null,
     enemyID: null,
     raceID: null,
-    dndclassID: null
+    dndclassID: null,
+    subclassID: null
 };
 
 const store = new Vuex.Store({
@@ -16,6 +17,9 @@ const store = new Vuex.Store({
     getters: {
         enemyID: (state) => {
             return state.enemyID;
+        },
+        subclassID: (state) => {
+            return state.subclassID;
         },
         raceID: (state) => {
             return state.raceID;
@@ -31,6 +35,9 @@ const store = new Vuex.Store({
         enemyID(context, enemyID) {
             context.commit('enemyID', enemyID);
         },
+        subclassID(context, subclassID) {
+            context.commit('subclassID', subclassID);
+        },
         raceID(context, raceID) {
             context.commit('raceID', raceID);
         },
@@ -44,6 +51,9 @@ const store = new Vuex.Store({
     mutations: {
         enemyID(state, enemyID) {
             state.enemyID = enemyID;
+        },
+        subclassID(state, subclassID) {
+            state.subclassID = subclassID;
         },
         raceID(state, raceID) {
             state.raceID = raceID;

@@ -152,7 +152,7 @@
                  data-aos-once="true"
                  data-aos-anchor-placement="top-center"
                 class="col-lg-1 col-md-6 col-sm-12 mt-3 mt-lg-5 lg-box ms-xl-3 ms-lg-3 me-xl-1">
-                <router-link style="text-decoration: none" to="/Podklasy">
+                <router-link style="text-decoration: none" to="/TworzeniePodklas">
                     <div class="card p-4 bg-white">
                         <div class="d-none d-lg-block text-center">
                             <h2 class="d-block">Podklasy</h2>

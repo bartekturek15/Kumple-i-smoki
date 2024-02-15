@@ -40,13 +40,13 @@
             </thead>
             <tbody v-if="this.items.length > 0">
                     <tr v-for="item in VisiblePost" :key="item.raceID" class="position-relative">
-                        <td v-if="item.inheritedRaceID != 0" scope="row">
+                        <td scope="row">
                             <router-link class="stretched-link" style="text-decoration: none; color:whitesmoke" 
-                            :to="{ name: 'ByRaceId', params: { id: item.raceID }}">
+                            :to="{ name: 'BySubclassId', params: { id: item.subclassId, link: '/PolubionePodklasy' }}">
                                 {{ item.ownerName }}
                             </router-link>
                         </td> 
-                        <td v-if="item.inheritedRaceID != 0">{{ item.raceName }}</td>  
+                        <td>{{ item.subclassName }}</td>  
                         <td>{{ item.upvotes }}</td>
                     </tr>
             </tbody>
@@ -129,7 +129,7 @@
             const newArr = this.items.filter((item) => item !== null);
             if (this.searchFilter !== '') {
                 return newArr.filter(item => 
-                item.raceName.toLowerCase().includes(this.searchFilter.toLowerCase()));
+                item.subclassName.toLowerCase().includes(this.searchFilter.toLowerCase()));
             }
 
             return newArr;
@@ -169,7 +169,7 @@
         }
     },
     mounted() {
-        axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/Spell/upvoted', {
+        axios.get('https://kumpleismokibbkservice.azurewebsites.net/api/DndSubclass/upvoted', {
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }

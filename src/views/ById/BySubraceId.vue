@@ -65,7 +65,7 @@
             <p class="fs-5 d-inline fw-bold" style="color: rgba(255, 255, 255, 0.950);">Języki:</p> <p class="d-inline fs-5 ms-3" style="color: rgba(255, 255, 255, 0.850);">{{ item.raceLanguages }}</p>
         </div>
         <div class="ps-5 pb-3 mb-3" v-for="(line, index) in itemCustomFeatures" :key="index_row">
-            <p class="fs-5 d-inline fw-bold" style="color: rgba(255, 255, 255, 0.950);">Custom Feature:</p> <p class="d-inline fs-5 ms-3" style="color: rgba(255, 255, 255, 0.850);">{{ line.featureDesc }}</p>
+            <p class="fs-5 d-inline fw-bold" style="color: rgba(255, 255, 255, 0.950);">{{ line.featureName }}:</p> <p class="d-inline fs-5 ms-3" style="color: rgba(255, 255, 255, 0.850);">{{ line.featureDesc }}</p>
         </div>
         
         <div class="ps-md-5 pe-md-5 mb-3 pt-3 fs-6">
@@ -116,7 +116,7 @@ export default {
     methods: {
         deleted() {
             
-            axios.delete('https://kumpleismokibbkservice.azurewebsites.net/api/Subrace', {
+            axios.delete('https://kumpleismokibbkservice.azurewebsites.net/api/Race', {
                 headers: {
                                 Authorization: 'Bearer ' + localStorage.getItem('token')
                         },
@@ -145,7 +145,7 @@ export default {
             .then(response => this.itemCustomFeatures = response.data);    
         
             if(this.link == null) {
-            this.linked = "/Podrasy"
+            this.linked = "/Podklasy"
             }
             else {
                 this.linked = this.link

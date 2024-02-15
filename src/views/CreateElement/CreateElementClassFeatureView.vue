@@ -121,6 +121,9 @@ export default {
                     response => {
                             setTimeout(() => {
                                 this.submitStatus = 'OK'
+                                this.clearFields()
+                                this.v$.classFeature.featureDesc.$reset()
+                                this.v$.classFeature.featureName.$reset()
                                 localStorage.removeItem('classFeature');   
                                 this.clearFields() 
                             }, 500) 
