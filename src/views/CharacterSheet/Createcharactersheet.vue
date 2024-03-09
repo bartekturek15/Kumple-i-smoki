@@ -5,7 +5,7 @@
         <div class="row mb-5 mt-5">        
             <div class="col-3 input-field mt-4">
                 <div class="namebox border rounded-start pt-4">
-                    <input type="text" class="input me-4 chaname" id="characterName" autocomplete="off" placeholder="Irek" v-model="character.characterName"  @input="updateForm('characterName', $event.target.value)">
+                    <input type="text" class="input me-4 chaname" id="characterName" autocomplete="off" placeholder="Maciek" v-model="character.characterName"  @input="updateForm('characterName', $event.target.value)">
                     <div class="text-start ms-4"><label class="namelab" style="color: whitesmoke;" for="characterName">Nazwa postaci</label></div>
                 </div>
             </div>
