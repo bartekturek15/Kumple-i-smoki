@@ -1209,7 +1209,7 @@
                                 .then(response => {
                                   this.characters = response.data
                                   this.id = this.characters[this.characters.length-1].characterId
-                                  this.$router.push('/Czary/' + this.id)
+                                  this.$router.push('/Kartapostaci/' + this.id)
                                 })   
                               }, 2000)    
                       })  

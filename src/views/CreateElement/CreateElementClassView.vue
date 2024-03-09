@@ -18,7 +18,7 @@
         <div class="row mt-1 justify-content-center">
         <h1 class="fs-3 text-light text-left mb-5 ps-3 pe-3">Stwórz table z danymi dla klasy:</h1>
          <div class="col-lg-6 mb-4 mb-md-5 input-field">
-             <input type="text" class="input" id="classColumn" autocomplete="off" placeholder=" " v-model="table.classColumn" @blur="v$.table.classColumn.$touch" @input="set_data()">
+             <input type="text" class="input" id="classColumn" autocomplete="off" placeholder=" " v-model="table.classColumn" @blur="v$.table.classColumn.$touch" @input="table.classColumn = table.classColumn.slice(0,2), set_data()">
              <label style="color: white;" for="classColumn" class="form-label">Kolumny:</label>
              <p style="color: red;"
               class="fs-6"
@@ -29,7 +29,7 @@
             </p>
          </div>
          <div class="col-lg-6 mb-3 mb-md-5 input-field">
-             <input type="text" class="input" id="classRow" autocomplete="off" placeholder=" " v-model="table.classRow" @blur="v$.table.classRow.$touch" @input="set_data()">
+             <input type="text" class="input" id="classRow" autocomplete="off" placeholder=" " v-model="table.classRow" @blur="v$.table.classRow.$touch" @input="table.classRow = table.classRow.slice(0,2), set_data()">
              <label style="color: white;" for="classRow" class="form-label">Rzędy:</label>
              <p style="color: red;"
               class="fs-6"
@@ -67,7 +67,7 @@
           <div class="row mt-4 justify-content-center">
         <h1 class="fs-3 text-light text-left mb-5 ps-3 pe-3">Stwórz table z Punktami czarów dla klasy:</h1>
          <div class="col-lg-6 mb-4 mb-md-5 input-field">
-             <input type="text" class="input" id="spellColumn" autocomplete="off" placeholder=" " v-model="table.spellColumn" @blur="v$.table.spellColumn.$touch" @input="set_data()">
+             <input type="text" class="input" id="spellColumn" autocomplete="off" placeholder=" " v-model="table.spellColumn" @blur="v$.table.spellColumn.$touch" @input="table.spellColumn = table.spellColumn.slice(0,2), set_data()">
              <label style="color: white;" for="spellColumn" class="form-label">Kolumny:</label>
              <p style="color: red;"
               class="fs-6"
@@ -78,7 +78,7 @@
             </p>
          </div>
          <div class="col-lg-6 mb-3 mb-md-5 input-field">
-             <input type="text" class="input" id="spellRow" autocomplete="off" placeholder=" " v-model="table.spellRow" @blur="v$.table.spellRow.$touch" @input="set_data()">
+             <input type="text" class="input" id="spellRow" autocomplete="off" placeholder=" " v-model="table.spellRow" @blur="v$.table.spellRow.$touch" @input="table.spellRow = table.spellRow.slice(0,2), set_data()">
              <label style="color: white;" for="spellRow" class="form-label">Rzędy:</label>
              <p style="color: red;"
               class="fs-6"
